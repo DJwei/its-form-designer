@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.hsa.its.form.dao.FormConfigDAO">
+	<sql id="columns">
+		t.rid, <!-- 唯一记录号-->
+		t.form_id, <!-- 表单ID-->
+		t.form_code, <!-- 表单代码-->
+		t.form_name, <!-- 表单名称-->
+		t.form_desc, <!-- 表单描述-->
+		t.form_col, <!-- 表单列数-->
+		t.ttl_wid, <!-- 标题宽度-->
+		t.tmpl_flag, <!-- 模板标志，0-不是模板；1-是模板-->
+		t.vali_flag, <!-- 有效标志-->
+		t.insu_admdvs, <!-- 所属医保区划-->
+		t.admdvs, <!-- 医保区划-->
+		t.poolarea_no, <!-- 统筹区编号-->
+		t.crter_id, <!-- 创建人ID-->
+		t.crter_name, <!-- 创建人姓名-->
+		t.crte_optins_no, <!-- 创建机构编号-->
+		t.crte_time, <!-- 创建时间-->
+		t.opter_id, <!-- 经办人ID-->
+		t.opter_name, <!-- 经办人姓名-->
+		t.optins_no, <!-- 经办机构编号-->
+		t.opt_time, <!-- 经办时间-->
+		t.updt_time, <!-- 更新时间-->
+		t.form_get_inter,<!-- 查询接口-->
+		t.form_save_inter,<!-- 保存接口-->
+		t.form_apply_inter<!-- 申报接口-->
+	</sql>
+	<!-- 查询表单列表-->
+	<select id="listFormConfig" parameterType="cn.hsa.its.form.dto.FormConfigParamDTO" resultType="cn.hsa.its.form.dto.FormConfigDTO">
+		SELECT
+		<include refid="columns"/>
+		from form_cfg_b t
+		<where>
+			t.vali_flag = '1'
+			<if test="formId != null and formId != '' "> and t.form_id = #{formId}</if>
+			<if test="formCode != null and formCode != '' "> and t.form_code = #{formCode}</if>
+			<if test="formName != null and formName != '' "> and t.form_name = #{formName}</if>
+			<if test="formDesc != null and formDesc != '' "> and t.form_desc = #{formDesc}</if>
+			<if test="formCol != null and formCol != '' "> and t.form_col = #{formCol}</if>
+			<if test="ttlWid != null and ttlWid != '' "> and t.ttl_wid = #{ttlWid}</if>
+			<if test="tmplFlag != null and tmplFlag != '' "> and t.tmpl_flag = #{tmplFlag}</if>
+			<if test="insuAdmdvs != null and insuAdmdvs != '' "> and t.insu_admdvs = #{insuAdmdvs}</if>
+			<if test="admdvs != null and admdvs != '' "> and t.admdvs = #{admdvs}</if>
+			<if test="poolareaNo != null and poolareaNo != '' "> and t.poolarea_no = #{poolareaNo}</if>
+			<if test="crterId != null and crterId != '' "> and t.crter_id = #{crterId}</if>
+			<if test="crterName != null and crterName != '' "> and t.crter_name = #{crterName}</if>
+			<if test="crteOptinsNo != null and crteOptinsNo != '' "> and t.crte_optins_no = #{crteOptinsNo}</if>
+			<if test="crteTime != null and crteTime != '' "> and t.crte_time = #{crteTime}</if>
+			<if test="opterId != null and opterId != '' "> and t.opter_id = #{opterId}</if>
+			<if test="opterName != null and opterName != '' "> and t.opter_name = #{opterName}</if>
+			<if test="optinsNo != null and optinsNo != '' "> and t.optins_no = #{optinsNo}</if>
+			<if test="optTime != null and optTime != '' "> and t.opt_time = #{optTime}</if>
+			<if test="updtTime != null and updtTime != '' "> and t.updt_time = #{updtTime}</if>
+		</where>
+		order by t.crte_time desc
+	</select>
+	<!-- 获取表单详情-->
+	<select id="getFormConfig" parameterType="cn.hsa.its.form.dto.FormConfigParamDTO" resultType="cn.hsa.its.form.dto.FormConfigDTO">
+		SELECT
+		<include refid="columns"/>
+		from form_cfg_b t
+		where t.form_id = #{formId}  <!-- 表单ID-->
+		and   t.vali_flag = '1'
+	</select>
+	<select id="getFormConfigByCode" parameterType="cn.hsa.its.form.dto.FormConfigParamDTO" resultType="cn.hsa.its.form.dto.FormConfigDTO">
+		SELECT
+		<include refid="columns"/>
+		from form_cfg_b t
+		where t.form_code = #{vo.formCode}  <!-- 表单ID-->
+		and   t.vali_flag = '1'
+	</select>
+	<!-- 删除表单配置-->
+	<update id="deleteFormConfig" parameterType="String">
+		update form_cfg_b set
+			vali_flag = '0'
+		where form_id = #{formId} <!-- 表单ID-->
+	</update>
+</mapper>

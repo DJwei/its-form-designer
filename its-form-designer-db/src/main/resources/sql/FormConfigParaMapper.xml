@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.hsa.its.form.dao.FormConfigParaDAO">
+    <sql id="columns">
+        t.rid, <!-- 唯一记录号-->
+        t.para_id, <!-- 参数ID-->
+        t.form_id, <!-- 表单ID-->
+        t.para_seq, <!-- 参数顺序号-->
+        t.para_name, <!-- 参数名称-->
+        t.paraval, <!-- 参数值-->
+        t.vali_flag, <!-- 有效标志-->
+        t.insu_admdvs, <!-- 所属医保区划-->
+        t.admdvs, <!-- 医保区划-->
+        t.poolarea_no, <!-- 统筹区编号-->
+        t.crter_id, <!-- 创建人ID-->
+        t.crter_name, <!-- 创建人姓名-->
+        t.crte_optins_no, <!-- 创建机构编号-->
+        t.crte_time <!-- 创建时间-->
+    </sql>
+    <!-- 查询表单信息列表-->
+    <select id="listFormConfigPara" parameterType="cn.hsa.its.form.dto.FormConfigParaDTO" resultType="cn.hsa.its.form.dto.FormConfigParaDTO">
+        SELECT
+        <include refid="columns"/>
+        from form_cfg_para_b t
+        <where>
+            t.vali_flag = '1'
+            <if test="paraId != null and paraId != '' "> and t.para_id = #{paraId}</if>
+            <if test="formId != null and formId != '' "> and t.form_id = #{formId}</if>
+            <if test="paraSeq != null and paraSeq != '' "> and t.para_seq = #{paraSeq}</if>
+            <if test="paraName != null and paraName != '' "> and t.para_name = #{paraName}</if>
+            <if test="paraval != null and paraval != '' "> and t.paraval = #{paraval}</if>
+            <if test="insuAdmdvs != null and insuAdmdvs != '' "> and t.insu_admdvs = #{insuAdmdvs}</if>
+            <if test="admdvs != null and admdvs != '' "> and t.admdvs = #{admdvs}</if>
+            <if test="poolareaNo != null and poolareaNo != '' "> and t.poolarea_no = #{poolareaNo}</if>
+            <if test="crterId != null and crterId != '' "> and t.crter_id = #{crterId}</if>
+            <if test="crterName != null and crterName != '' "> and t.crter_name = #{crterName}</if>
+            <if test="crteOptinsNo != null and crteOptinsNo != '' "> and t.crte_optins_no = #{crteOptinsNo}</if>
+            <if test="crteTime != null and crteTime != '' "> and t.crte_time = #{crteTime}</if>
+        </where>
+        order by t.para_seq asc
+    </select>
+    <!-- 获取表单详情-->
+    <select id="getFormConfigPara" parameterType="cn.hsa.its.form.dto.FormConfigParaDTO" resultType="cn.hsa.its.form.dto.FormConfigParaDTO">
+        SELECT
+        <include refid="columns"/>
+        from form_cfg_para_b t
+        where t.para_id = #{paraId}  <!-- 参数ID-->
+        and   t.vali_flag = '1'
+    </select>
+
+    <!-- 删除表单配置-->
+    <update id="deleteFormConfigPara" parameterType="String">
+        update form_cfg_para_b set
+        vali_flag = '0'
+        where form_id = #{formId} <!-- 表单ID-->
+    </update>
+</mapper>

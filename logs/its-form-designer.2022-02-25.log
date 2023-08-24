@@ -1,0 +1,660 @@
+2022-02-25 09:51:33.981 - [] - [main] INFO  cn.hsa.its.ItsFormDesignerApplication.logStarting(50) - Starting ItsFormDesignerApplication on LAPTOP-25O35OPL with PID 8716 (started by powersi in C:\Users\powersi\Desktop\自定义表单\its-form-designer-develop)
+2022-02-25 09:51:33.986 - [] - [main] DEBUG cn.hsa.its.ItsFormDesignerApplication.logStarting(53) - Running with Spring Boot v2.0.9.RELEASE, Spring v5.0.13.RELEASE
+2022-02-25 09:51:33.989 - [] - [main] INFO  cn.hsa.its.ItsFormDesignerApplication.logStartupProfileInfo(658) - The following profiles are active: local
+2022-02-25 09:51:34.103 - [] - [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext.prepareRefresh(592) - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3b0c9195: startup date [Fri Feb 25 09:51:34 CST 2022]; root of context hierarchy
+2022-02-25 09:51:35.359 - [] - [main] INFO  o.s.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317) - Loading XML bean definitions from URL [file:/C:/Users/powersi/Desktop/%e8%87%aa%e5%ae%9a%e4%b9%89%e8%a1%a8%e5%8d%95/its-form-designer-develop/hsa-main-generic/target/classes/config/spring.xml]
+2022-02-25 09:51:35.469 - [] - [main] INFO  o.s.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317) - Loading XML bean definitions from class path resource [config/db/db.xml]
+2022-02-25 09:51:35.826 - [] - [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate.multipleStoresDetected(172) - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-02-25 09:51:35.949 - [] - [main] INFO  o.s.b.factory.support.DefaultListableBeanFactory.registerBeanDefinition(824) - Overriding bean definition for bean 'org.springframework.transaction.config.internalTransactionAdvisor' with a different definition: replacing [Root bean: class [org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration; factoryMethodName=transactionAdvisor; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/transaction/annotation/ProxyTransactionManagementConfiguration.class]]
+2022-02-25 09:51:35.951 - [] - [main] INFO  o.s.c.a.ConfigurationClassBeanDefinitionReader.isOverriddenByExistingDefinition(307) - Skipping bean definition for [BeanMethod:name=transactionalEventListenerFactory,declaringClass=org.springframework.transaction.annotation.AbstractTransactionManagementConfiguration]: a definition for bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory' already exists. This top-level bean definition is considered as an override.
+2022-02-25 09:51:36.486 - [] - [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(326) - Bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0' of type [org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-25 09:51:36.528 - [] - [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(326) - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c80a0e3d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-25 09:51:37.667 - [] - [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize(91) - Tomcat initialized with port(s): 8080 (http)
+2022-02-25 09:51:37.686 - [] - [main] INFO  org.apache.coyote.http11.Http11NioProtocol.log(180) - Initializing ProtocolHandler ["http-nio-8080"]
+2022-02-25 09:51:37.710 - [] - [main] INFO  org.apache.catalina.core.StandardService.log(180) - Starting service [Tomcat]
+2022-02-25 09:51:37.710 - [] - [main] INFO  org.apache.catalina.core.StandardEngine.log(180) - Starting Servlet Engine: Apache Tomcat/8.5.39
+2022-02-25 09:51:37.717 - [] - [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener.log(180) - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_251\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\JetBrains\IntelliJ IDEA 2019.1.4\jre64\\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.1.4\jre64\\bin\server;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Java\jdk1.8.0_251\bin;C:\Program Files\TortoiseSVN\bin;C:\Users\powersi\Desktop\HBuilderX\plugins\launcher\tools\adbs;C:\Program Files\nodejs\;C:\Users\powersi\AppData\Local\Microsoft\WindowsApps;C:\Users\powersi\AppData\Roaming\npm;.]
+2022-02-25 09:51:37.928 - [] - [localhost-startStop-1] INFO  o.a.c.c.C.[.[localhost].[/its-form-designer].log(180) - Initializing Spring embedded WebApplicationContext
+2022-02-25 09:51:37.929 - [] - [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader.prepareWebApplicationContext(296) - Root WebApplicationContext: initialization completed in 3826 ms
+2022-02-25 09:51:38.001 - [] - [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean.addRegistration(187) - Servlet dispatcherServlet mapped to [/]
+2022-02-25 09:51:38.012 - [] - [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean.configure(245) - Mapping filter: 'characterEncodingFilter' to: [/*]
+2022-02-25 09:52:00.976 - [] - [main] INFO  com.alibaba.druid.pool.DruidDataSource.init(1003) - {dataSource-1} inited
+2022-02-25 09:52:04.180 - [] - [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(550) - Mapped "{[/web/its/form/componentConfig/deleteComponentConfig],methods=[POST]}" onto public cn.hsa.its.form.dto.WrapperResponse<java.lang.Integer> cn.hsa.its.form.controller.ComponentConfigController.deleteComponentConfig(cn.hsa.its.form.dto.ComponentConfigParamDTO)
+2022-02-25 09:52:04.184 - [] - [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(550) - Mapped "{[/web/its/form/componentConfig/getComponentConfig],methods=[POST]}" onto public cn.hsa.its.form.dto.WrapperResponse<cn.hsa.its.form.dto.ComponentConfigDTO> cn.hsa.its.form.controller.ComponentConfigController.getComponentConfig(cn.hsa.its.form.dto.ComponentConfigParamDTO)
+2022-02-25 09:52:04.184 - [] - [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(550) - Mapped "{[/web/its/form/componentConfig/listComponentConfig],methods=[POST]}" onto public cn.hsa.its.form.dto.WrapperResponse<cn.hsa.its.form.dto.PageResultData<cn.hsa.its.form.dto.ComponentConfigDTO>> cn.hsa.its.form.controller.ComponentConfigController.listComponentConfig(cn.hsa.its.form.dto.ComponentConfigParamDTO)
+2022-02-25 09:52:04.186 - [] - [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(550) - Mapped "{[/web/its/form/componentConfig/saveComponentConfig],methods=[POST]}" onto public cn.hsa.its.form.dto.WrapperResponse<java.lang.Integer> cn.hsa.its.form.controller.ComponentConfigController.saveComponentConfig(cn.hsa.its.form.dto.ComponentConfigDTO)
+2022-02-25 09:52:04.191 - [] - [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(550) - Mapped "{[/web/its/form/fieldConfig/listFieldConfig],methods=[POST]}" onto public cn.hsa.its.form.dto.WrapperResponse<cn.hsa.its.form.dto.PageResultData<cn.hsa.its.form.dto.FieldConfigDTO>> cn.hsa.its.form.controller.FieldConfigController.listFieldConfig(cn.hsa.its.form.dto.FieldConfigParamDTO)
+2022-02-25 09:52:04.192 - [] - [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(550) - Mapped "{[/web/its/form/fieldConfig/saveFieldConfig],methods=[POST]}" onto public cn.hsa.its.form.dto.WrapperResponse<java.lang.Integer> cn.hsa.its.form.controller.FieldConfigController.saveFieldConfig(cn.hsa.its.form.dto.FieldConfigDTO)
+2022-02-25 09:52:04.193 - [] - [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(550) - Mapped "{[/web/its/form/fieldConfig/getFieldConfig],methods=[POST]}" onto public cn.hsa.its.form.dto.WrapperResponse<cn.hsa.its.form.dto.FieldConfigDTO> cn.hsa.its.form.controller.FieldConfigController.getFieldConfig(cn.hsa.its.form.dto.FieldConfigParamDTO)
+2022-02-25 09:52:04.194 - [] - [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(550) - Mapped "{[/web/its/form/fieldConfig/getFieldDict],methods=[GET]}" onto public cn.hsa.its.form.dto.WrapperResponse<java.util.List<cn.hsa.its.form.dto.CodeTableDTO>> cn.hsa.its.form.controller.FieldConfigController.getFieldDict()
+2022-02-25 09:52:04.195 - [] - [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(550) - Mapped "{[/web/its/form/fieldConfig/deleteFieldConfig],methods=[POST]}" onto public cn.hsa.its.form.dto.WrapperResponse<java.lang.Integer> cn.hsa.its.form.controller.FieldConfigController.deleteFieldConfig(cn.hsa.its.form.dto.FieldConfigParamDTO)
+2022-02-25 09:52:04.198 - [] - [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(550) - Mapped "{[/web/its/form/formConfig/deleteFormConfig],methods=[POST]}" onto public cn.hsa.its.form.dto.WrapperResponse<java.lang.Integer> cn.hsa.its.form.controller.FormConfigController.deleteFormConfig(cn.hsa.its.form.dto.FormConfigParamDTO)
+2022-02-25 09:52:04.199 - [] - [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(550) - Mapped "{[/web/its/form/formConfig/saveFormConfig],methods=[POST]}" onto public cn.hsa.its.form.dto.WrapperResponse<java.lang.Integer> cn.hsa.its.form.controller.FormConfigController.saveFormConfig(cn.hsa.its.form.dto.FormConfigDTO)
+2022-02-25 09:52:04.201 - [] - [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(550) - Mapped "{[/web/its/form/formConfig/listFormConfig],methods=[POST]}" onto public cn.hsa.its.form.dto.WrapperResponse<cn.hsa.its.form.dto.PageResultData<cn.hsa.its.form.dto.FormConfigDTO>> cn.hsa.its.form.controller.FormConfigController.listFormConfig(cn.hsa.its.form.dto.FormConfigParamDTO)
+2022-02-25 09:52:04.203 - [] - [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(550) - Mapped "{[/web/its/form/formConfig/getFormConfig],methods=[POST]}" onto public cn.hsa.its.form.dto.WrapperResponse<cn.hsa.its.form.dto.FormConfigDTO> cn.hsa.its.form.controller.FormConfigController.getFormConfig(cn.hsa.its.form.dto.FormConfigParamDTO)
+2022-02-25 09:52:04.211 - [] - [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(550) - Mapped "{[/web/its/form/formInstance/getFormInstance],methods=[POST]}" onto public cn.hsa.its.form.dto.WrapperResponse<cn.hsa.its.form.dto.FormInstanceDTO> cn.hsa.its.form.controller.FormInstanceController.getFormInstance(cn.hsa.its.form.dto.FormInstanceDTO)
+2022-02-25 09:52:04.212 - [] - [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(550) - Mapped "{[/web/its/form/formInstance/listFormInstance],methods=[POST]}" onto public cn.hsa.its.form.dto.WrapperResponse<cn.hsa.its.form.dto.PageResultData<cn.hsa.its.form.dto.FormInstanceDTO>> cn.hsa.its.form.controller.FormInstanceController.listFormInstance(cn.hsa.its.form.dto.FormInstanceDTO)
+2022-02-25 09:52:04.213 - [] - [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(550) - Mapped "{[/web/its/form/formInstance/saveFormInstance],methods=[POST]}" onto public cn.hsa.its.form.dto.WrapperResponse<java.lang.String> cn.hsa.its.form.controller.FormInstanceController.saveFormInstance(cn.hsa.its.form.dto.FormInstanceDTO)
+2022-02-25 09:52:04.214 - [] - [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(550) - Mapped "{[/web/its/form/formInstance/deleteFormInstance],methods=[POST]}" onto public cn.hsa.its.form.dto.WrapperResponse<java.lang.Integer> cn.hsa.its.form.controller.FormInstanceController.deleteFormInstance(cn.hsa.its.form.dto.FormInstanceDTO)
+2022-02-25 09:52:04.222 - [] - [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(550) - Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2022-02-25 09:52:04.224 - [] - [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(550) - Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2022-02-25 09:52:04.227 - [] - [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(550) - Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2022-02-25 09:52:04.232 - [] - [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(550) - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2022-02-25 09:52:04.234 - [] - [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(550) - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2022-02-25 09:52:04.728 - [] - [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(69) - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2022-02-25 09:52:04.922 - [] - [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler(372) - Mapped URL path [/swagger-ui.html] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2022-02-25 09:52:04.923 - [] - [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler(372) - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2022-02-25 09:52:05.145 - [] - [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache(589) - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3b0c9195: startup date [Fri Feb 25 09:51:34 CST 2022]; root of context hierarchy
+2022-02-25 09:52:06.944 - [] - [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter.afterSingletonsInstantiated(433) - Registering beans for JMX exposure on startup
+2022-02-25 09:52:06.948 - [] - [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter.autodetect(895) - Bean with name 'dataSource' has been autodetected for JMX exposure
+2022-02-25 09:52:06.962 - [] - [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter.registerBeanInstance(668) - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2022-02-25 09:52:06.969 - [] - [main] INFO  o.s.context.support.DefaultLifecycleProcessor.start(356) - Starting beans in phase 2147483647
+2022-02-25 09:52:06.970 - [] - [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper.start(160) - Context refreshed
+2022-02-25 09:52:07.011 - [] - [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper.start(163) - Found 1 custom documentation plugin(s)
+2022-02-25 09:52:07.103 - [] - [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner.scan(41) - Scanning for api listing references
+2022-02-25 09:52:07.776 - [] - [main] INFO  org.apache.coyote.http11.Http11NioProtocol.log(180) - Starting ProtocolHandler ["http-nio-8080"]
+2022-02-25 09:52:07.797 - [] - [main] INFO  org.apache.tomcat.util.net.NioSelectorPool.log(180) - Using a shared selector for servlet write/read
+2022-02-25 09:52:07.844 - [] - [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer.start(206) - Tomcat started on port(s): 8080 (http) with context path '/its-form-designer'
+2022-02-25 09:52:07.858 - [] - [main] INFO  cn.hsa.its.ItsFormDesignerApplication.logStarted(59) - Started ItsFormDesignerApplication in 35.556 seconds (JVM running for 37.929)
+2022-02-25 09:52:47.923 - [] - [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/its-form-designer].log(180) - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2022-02-25 09:52:47.925 - [] - [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean(497) - FrameworkServlet 'dispatcherServlet': initialization started
+2022-02-25 09:52:47.998 - [] - [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean(512) - FrameworkServlet 'dispatcherServlet': initialization completed in 72 ms
+2022-02-25 09:52:48.336 - [] - [http-nio-8080-exec-1] DEBUG c.h.i.form.dao.FormConfigDAO.listFormConfig_COUNT.debug(143) - ==>  Preparing: SELECT count(0) FROM form_cfg_b t WHERE t.vali_flag = '1' 
+2022-02-25 09:52:48.383 - [] - [http-nio-8080-exec-1] DEBUG c.h.i.form.dao.FormConfigDAO.listFormConfig_COUNT.debug(143) - ==> Parameters: 
+2022-02-25 09:52:48.457 - [] - [http-nio-8080-exec-1] DEBUG c.h.i.form.dao.FormConfigDAO.listFormConfig_COUNT.debug(143) - <==      Total: 1
+2022-02-25 09:52:48.464 - [] - [http-nio-8080-exec-1] DEBUG cn.hsa.its.form.dao.FormConfigDAO.listFormConfig.debug(143) - ==>  Preparing: SELECT t.rid, t.form_id, t.form_code, t.form_name, t.form_desc, t.form_col, t.ttl_wid, t.tmpl_flag, t.vali_flag, t.insu_admdvs, t.admdvs, t.poolarea_no, t.crter_id, t.crter_name, t.crte_optins_no, t.crte_time, t.opter_id, t.opter_name, t.optins_no, t.opt_time, t.updt_time from form_cfg_b t WHERE t.vali_flag = '1' order by t.crte_time desc LIMIT ? 
+2022-02-25 09:52:48.468 - [] - [http-nio-8080-exec-1] DEBUG cn.hsa.its.form.dao.FormConfigDAO.listFormConfig.debug(143) - ==> Parameters: 15(Integer)
+2022-02-25 09:52:48.496 - [] - [http-nio-8080-exec-1] DEBUG cn.hsa.its.form.dao.FormConfigDAO.listFormConfig.debug(143) - <==      Total: 1
+2022-02-25 09:52:48.503 - [] - [http-nio-8080-exec-1] DEBUG c.h.i.f.dao.FormConfigParaDAO.listFormConfigPara.debug(143) - ==>  Preparing: SELECT t.rid, t.para_id, t.form_id, t.para_seq, t.para_name, t.paraval, t.vali_flag, t.insu_admdvs, t.admdvs, t.poolarea_no, t.crter_id, t.crter_name, t.crte_optins_no, t.crte_time from form_cfg_para_b t WHERE t.vali_flag = '1' and t.form_id = ? order by t.para_seq asc 
+2022-02-25 09:52:48.505 - [] - [http-nio-8080-exec-1] DEBUG c.h.i.f.dao.FormConfigParaDAO.listFormConfigPara.debug(143) - ==> Parameters: 202202243(String)
+2022-02-25 09:52:48.524 - [] - [http-nio-8080-exec-1] DEBUG c.h.i.f.dao.FormConfigParaDAO.listFormConfigPara.debug(143) - <==      Total: 2
+2022-02-25 09:53:21.229 - [] - [http-nio-8080-exec-2] DEBUG c.h.i.form.dao.FormConfigDAO.listFormConfig_COUNT.debug(143) - ==>  Preparing: SELECT count(0) FROM form_cfg_b t WHERE t.vali_flag = '1' 
+2022-02-25 09:53:21.231 - [] - [http-nio-8080-exec-2] DEBUG c.h.i.form.dao.FormConfigDAO.listFormConfig_COUNT.debug(143) - ==> Parameters: 
+2022-02-25 09:53:21.244 - [] - [http-nio-8080-exec-2] DEBUG c.h.i.form.dao.FormConfigDAO.listFormConfig_COUNT.debug(143) - <==      Total: 1
+2022-02-25 09:53:21.246 - [] - [http-nio-8080-exec-2] DEBUG cn.hsa.its.form.dao.FormConfigDAO.listFormConfig.debug(143) - ==>  Preparing: SELECT t.rid, t.form_id, t.form_code, t.form_name, t.form_desc, t.form_col, t.ttl_wid, t.tmpl_flag, t.vali_flag, t.insu_admdvs, t.admdvs, t.poolarea_no, t.crter_id, t.crter_name, t.crte_optins_no, t.crte_time, t.opter_id, t.opter_name, t.optins_no, t.opt_time, t.updt_time from form_cfg_b t WHERE t.vali_flag = '1' order by t.crte_time desc LIMIT ? 
+2022-02-25 09:53:21.247 - [] - [http-nio-8080-exec-2] DEBUG cn.hsa.its.form.dao.FormConfigDAO.listFormConfig.debug(143) - ==> Parameters: 15(Integer)
+2022-02-25 09:53:21.262 - [] - [http-nio-8080-exec-2] DEBUG cn.hsa.its.form.dao.FormConfigDAO.listFormConfig.debug(143) - <==      Total: 1
+2022-02-25 09:53:21.264 - [] - [http-nio-8080-exec-2] DEBUG c.h.i.f.dao.FormConfigParaDAO.listFormConfigPara.debug(143) - ==>  Preparing: SELECT t.rid, t.para_id, t.form_id, t.para_seq, t.para_name, t.paraval, t.vali_flag, t.insu_admdvs, t.admdvs, t.poolarea_no, t.crter_id, t.crter_name, t.crte_optins_no, t.crte_time from form_cfg_para_b t WHERE t.vali_flag = '1' and t.form_id = ? order by t.para_seq asc 
+2022-02-25 09:53:21.265 - [] - [http-nio-8080-exec-2] DEBUG c.h.i.f.dao.FormConfigParaDAO.listFormConfigPara.debug(143) - ==> Parameters: 202202243(String)
+2022-02-25 09:53:21.271 - [] - [http-nio-8080-exec-2] DEBUG c.h.i.f.dao.FormConfigParaDAO.listFormConfigPara.debug(143) - <==      Total: 2
+2022-02-25 09:53:52.283 - [] - [http-nio-8080-exec-3] DEBUG c.h.i.form.dao.FormConfigDAO.listFormConfig_COUNT.debug(143) - ==>  Preparing: SELECT count(0) FROM form_cfg_b t WHERE t.vali_flag = '1' 
+2022-02-25 09:53:52.284 - [] - [http-nio-8080-exec-3] DEBUG c.h.i.form.dao.FormConfigDAO.listFormConfig_COUNT.debug(143) - ==> Parameters: 
+2022-02-25 09:53:52.304 - [] - [http-nio-8080-exec-3] DEBUG c.h.i.form.dao.FormConfigDAO.listFormConfig_COUNT.debug(143) - <==      Total: 1
+2022-02-25 09:53:52.305 - [] - [http-nio-8080-exec-3] DEBUG cn.hsa.its.form.dao.FormConfigDAO.listFormConfig.debug(143) - ==>  Preparing: SELECT t.rid, t.form_id, t.form_code, t.form_name, t.form_desc, t.form_col, t.ttl_wid, t.tmpl_flag, t.vali_flag, t.insu_admdvs, t.admdvs, t.poolarea_no, t.crter_id, t.crter_name, t.crte_optins_no, t.crte_time, t.opter_id, t.opter_name, t.optins_no, t.opt_time, t.updt_time from form_cfg_b t WHERE t.vali_flag = '1' order by t.crte_time desc LIMIT ? 
+2022-02-25 09:53:52.306 - [] - [http-nio-8080-exec-3] DEBUG cn.hsa.its.form.dao.FormConfigDAO.listFormConfig.debug(143) - ==> Parameters: 15(Integer)
+2022-02-25 09:53:52.314 - [] - [http-nio-8080-exec-3] DEBUG cn.hsa.its.form.dao.FormConfigDAO.listFormConfig.debug(143) - <==      Total: 1
+2022-02-25 09:53:52.316 - [] - [http-nio-8080-exec-3] DEBUG c.h.i.f.dao.FormConfigParaDAO.listFormConfigPara.debug(143) - ==>  Preparing: SELECT t.rid, t.para_id, t.form_id, t.para_seq, t.para_name, t.paraval, t.vali_flag, t.insu_admdvs, t.admdvs, t.poolarea_no, t.crter_id, t.crter_name, t.crte_optins_no, t.crte_time from form_cfg_para_b t WHERE t.vali_flag = '1' and t.form_id = ? order by t.para_seq asc 
+2022-02-25 09:53:52.318 - [] - [http-nio-8080-exec-3] DEBUG c.h.i.f.dao.FormConfigParaDAO.listFormConfigPara.debug(143) - ==> Parameters: 202202243(String)
+2022-02-25 09:53:52.326 - [] - [http-nio-8080-exec-3] DEBUG c.h.i.f.dao.FormConfigParaDAO.listFormConfigPara.debug(143) - <==      Total: 2
+2022-02-25 09:54:36.613 - [] - [http-nio-8080-exec-4] DEBUG c.h.i.form.dao.FormConfigDAO.listFormConfig_COUNT.debug(143) - ==>  Preparing: SELECT count(0) FROM form_cfg_b t WHERE t.vali_flag = '1' AND t.tmpl_flag = ? 
+2022-02-25 09:54:36.614 - [] - [http-nio-8080-exec-4] DEBUG c.h.i.form.dao.FormConfigDAO.listFormConfig_COUNT.debug(143) - ==> Parameters: 1(String)
+2022-02-25 09:54:36.625 - [] - [http-nio-8080-exec-4] DEBUG c.h.i.form.dao.FormConfigDAO.listFormConfig_COUNT.debug(143) - <==      Total: 1
+2022-02-25 09:54:36.933 - [] - [http-nio-8080-exec-6] DEBUG cn.hsa.its.form.dao.FieldConfigDAO.getFieldDict.debug(143) - ==>  Preparing: select t.fld_code as data_val, t.fld_name as disp_val from fld_cfg_b t where t.vali_flag = '1' 
+2022-02-25 09:54:36.936 - [] - [http-nio-8080-exec-6] DEBUG cn.hsa.its.form.dao.FieldConfigDAO.getFieldDict.debug(143) - ==> Parameters: 
+2022-02-25 09:54:36.947 - [] - [http-nio-8080-exec-6] DEBUG cn.hsa.its.form.dao.FieldConfigDAO.getFieldDict.debug(143) - <==      Total: 0
+2022-02-25 09:54:37.032 - [] - [http-nio-8080-exec-5] DEBUG c.h.i.f.d.C.listComponentConfig_COUNT.debug(143) - ==>  Preparing: SELECT count(0) FROM comt_cfg_b t WHERE t.vali_flag = '1' 
+2022-02-25 09:54:37.033 - [] - [http-nio-8080-exec-5] DEBUG c.h.i.f.d.C.listComponentConfig_COUNT.debug(143) - ==> Parameters: 
+2022-02-25 09:54:37.059 - [] - [http-nio-8080-exec-5] DEBUG c.h.i.f.d.C.listComponentConfig_COUNT.debug(143) - <==      Total: 1
+2022-02-25 10:15:16.453 - [] - [Thread-71] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext.doClose(1006) - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3b0c9195: startup date [Fri Feb 25 09:51:34 CST 2022]; root of context hierarchy
+2022-02-25 10:15:16.457 - [] - [Thread-71] INFO  o.s.context.support.DefaultLifecycleProcessor.stop(369) - Stopping beans in phase 2147483647
+2022-02-25 10:15:16.458 - [] - [Thread-71] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter.destroy(451) - Unregistering JMX-exposed beans on shutdown
+2022-02-25 10:15:16.459 - [] - [Thread-71] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter.unregisterBeans(185) - Unregistering JMX-exposed beans
+2022-02-25 10:15:16.462 - [] - [Thread-71] INFO  com.alibaba.druid.pool.DruidDataSource.close(1948) - {dataSource-1} closing ...
+2022-02-25 10:15:16.464 - [] - [Thread-71] INFO  com.alibaba.druid.pool.DruidDataSource.close(2020) - {dataSource-1} closed
+2022-02-25 10:15:23.973 - [] - [main] INFO  cn.hsa.its.ItsFormDesignerApplication.logStarting(50) - Starting ItsFormDesignerApplication on LAPTOP-25O35OPL with PID 25372 (started by powersi in C:\Users\powersi\Desktop\自定义表单\its-form-designer-develop)
+2022-02-25 10:15:23.984 - [] - [main] DEBUG cn.hsa.its.ItsFormDesignerApplication.logStarting(53) - Running with Spring Boot v2.0.9.RELEASE, Spring v5.0.13.RELEASE
+2022-02-25 10:15:23.987 - [] - [main] INFO  cn.hsa.its.ItsFormDesignerApplication.logStartupProfileInfo(658) - The following profiles are active: local
+2022-02-25 10:15:24.154 - [] - [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext.prepareRefresh(592) - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2dd29a59: startup date [Fri Feb 25 10:15:24 CST 2022]; root of context hierarchy
+2022-02-25 10:15:25.494 - [] - [main] INFO  o.s.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317) - Loading XML bean definitions from URL [file:/C:/Users/powersi/Desktop/%e8%87%aa%e5%ae%9a%e4%b9%89%e8%a1%a8%e5%8d%95/its-form-designer-develop/hsa-main-generic/target/classes/config/spring.xml]
+2022-02-25 10:15:25.609 - [] - [main] INFO  o.s.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317) - Loading XML bean definitions from class path resource [config/db/db.xml]
+2022-02-25 10:15:25.980 - [] - [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate.multipleStoresDetected(172) - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-02-25 10:15:26.096 - [] - [main] INFO  o.s.b.factory.support.DefaultListableBeanFactory.registerBeanDefinition(824) - Overriding bean definition for bean 'org.springframework.transaction.config.internalTransactionAdvisor' with a different definition: replacing [Root bean: class [org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration; factoryMethodName=transactionAdvisor; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/transaction/annotation/ProxyTransactionManagementConfiguration.class]]
+2022-02-25 10:15:26.097 - [] - [main] INFO  o.s.c.a.ConfigurationClassBeanDefinitionReader.isOverriddenByExistingDefinition(307) - Skipping bean definition for [BeanMethod:name=transactionalEventListenerFactory,declaringClass=org.springframework.transaction.annotation.AbstractTransactionManagementConfiguration]: a definition for bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory' already exists. This top-level bean definition is considered as an override.
+2022-02-25 10:15:26.657 - [] - [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(326) - Bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0' of type [org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-25 10:15:26.701 - [] - [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(326) - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a73248e8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-25 10:15:27.705 - [] - [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize(91) - Tomcat initialized with port(s): 8080 (http)
+2022-02-25 10:15:27.732 - [] - [main] INFO  org.apache.coyote.http11.Http11NioProtocol.log(180) - Initializing ProtocolHandler ["http-nio-8080"]
+2022-02-25 10:15:27.757 - [] - [main] INFO  org.apache.catalina.core.StandardService.log(180) - Starting service [Tomcat]
+2022-02-25 10:15:27.758 - [] - [main] INFO  org.apache.catalina.core.StandardEngine.log(180) - Starting Servlet Engine: Apache Tomcat/8.5.39
+2022-02-25 10:15:27.765 - [] - [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener.log(180) - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_251\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\JetBrains\IntelliJ IDEA 2019.1.4\jre64\\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.1.4\jre64\\bin\server;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Java\jdk1.8.0_251\bin;C:\Program Files\TortoiseSVN\bin;C:\Users\powersi\Desktop\HBuilderX\plugins\launcher\tools\adbs;C:\Program Files\nodejs\;C:\Users\powersi\AppData\Local\Microsoft\WindowsApps;C:\Users\powersi\AppData\Roaming\npm;.]
+2022-02-25 10:15:28.023 - [] - [localhost-startStop-1] INFO  o.a.c.c.C.[.[localhost].[/its-form-designer].log(180) - Initializing Spring embedded WebApplicationContext
+2022-02-25 10:15:28.023 - [] - [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader.prepareWebApplicationContext(296) - Root WebApplicationContext: initialization completed in 3869 ms
+2022-02-25 10:15:28.095 - [] - [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean.addRegistration(187) - Servlet dispatcherServlet mapped to [/]
+2022-02-25 10:15:28.106 - [] - [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean.configure(245) - Mapping filter: 'characterEncodingFilter' to: [/*]
+2022-02-25 10:15:32.949 - [] - [main] ERROR com.alibaba.druid.pool.DruidDataSource.init(936) - init datasource error, url: jdbc:mysql://172.18.100.218:3306/csrc_ext_form_db?connectTimeout=5000&socketTimeout=10000&autoReconnect=true&failOverReadOnly=false&useSSL=false&useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2B8
+java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:73)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:897)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:822)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1598)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1662)
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:932)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeCustomInitMethod(AbstractAutowireCapableBeanFactory.java:1819)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1762)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1690)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:573)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:367)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:110)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1597)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1349)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1416)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1319)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:514)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:485)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:619)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:180)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:318)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:762)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:881)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:386)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1242)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1230)
+	at cn.hsa.its.ItsFormDesignerApplication.main(ItsFormDesignerApplication.java:29)
+Caused by: com.mysql.cj.exceptions.CJException: Access denied for user 'saas      '@'172.16.63.107' (using password: YES)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:129)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:795)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:720)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:688)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:130)
+	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.proceedHandshakeWithPluggableAuthentication(NativeAuthenticationProvider.java:540)
+	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.connect(NativeAuthenticationProvider.java:202)
+	at com.mysql.cj.protocol.a.NativeProtocol.connect(NativeProtocol.java:1348)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:163)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:841)
+	... 67 common frames omitted
+2022-02-25 10:15:32.956 - [] - [main] ERROR com.alibaba.druid.pool.DruidDataSource.init(978) - {dataSource-1} init error
+java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:73)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:897)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:822)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1598)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1662)
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:932)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeCustomInitMethod(AbstractAutowireCapableBeanFactory.java:1819)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1762)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1690)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:573)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:367)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:110)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1597)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1349)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1416)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1319)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:514)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:485)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:619)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:180)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:318)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:762)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:881)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:386)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1242)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1230)
+	at cn.hsa.its.ItsFormDesignerApplication.main(ItsFormDesignerApplication.java:29)
+Caused by: com.mysql.cj.exceptions.CJException: Access denied for user 'saas      '@'172.16.63.107' (using password: YES)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:129)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:795)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:720)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:688)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:130)
+	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.proceedHandshakeWithPluggableAuthentication(NativeAuthenticationProvider.java:540)
+	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.connect(NativeAuthenticationProvider.java:202)
+	at com.mysql.cj.protocol.a.NativeProtocol.connect(NativeProtocol.java:1348)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:163)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:841)
+	... 67 common frames omitted
+2022-02-25 10:15:32.957 - [] - [main] INFO  com.alibaba.druid.pool.DruidDataSource.init(1003) - {dataSource-1} inited
+2022-02-25 10:15:32.960 - [] - [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext.refresh(559) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'componentConfigBOImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'componentConfigDAO' defined in file [C:\Users\powersi\Desktop\自定义表单\its-form-designer-develop\its-form-designer-biz\target\classes\cn\hsa\its\form\dao\ComponentConfigDAO.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [config/db/db.xml]: Cannot resolve reference to bean 'dataSource' while setting bean property 'dataSource'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [config/db/db.xml]: Invocation of init method failed; nested exception is java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+2022-02-25 10:15:32.996 - [] - [main] INFO  org.apache.catalina.core.StandardService.log(180) - Stopping service [Tomcat]
+2022-02-25 10:15:33.009 - [] - [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener.logMessage(142) - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-02-25 10:15:33.020 - [] - [main] ERROR org.springframework.boot.SpringApplication.reportFailure(837) - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'componentConfigBOImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'componentConfigDAO' defined in file [C:\Users\powersi\Desktop\自定义表单\its-form-designer-develop\its-form-designer-biz\target\classes\cn\hsa\its\form\dao\ComponentConfigDAO.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [config/db/db.xml]: Cannot resolve reference to bean 'dataSource' while setting bean property 'dataSource'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [config/db/db.xml]: Invocation of init method failed; nested exception is java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:762)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:881)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:386)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1242)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1230)
+	at cn.hsa.its.ItsFormDesignerApplication.main(ItsFormDesignerApplication.java:29)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'componentConfigDAO' defined in file [C:\Users\powersi\Desktop\自定义表单\its-form-designer-develop\its-form-designer-biz\target\classes\cn\hsa\its\form\dao\ComponentConfigDAO.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [config/db/db.xml]: Cannot resolve reference to bean 'dataSource' while setting bean property 'dataSource'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [config/db/db.xml]: Invocation of init method failed; nested exception is java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1319)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:514)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:485)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:619)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:180)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:318)
+	... 17 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [config/db/db.xml]: Cannot resolve reference to bean 'dataSource' while setting bean property 'dataSource'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [config/db/db.xml]: Invocation of init method failed; nested exception is java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:378)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:110)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1597)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1349)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1416)
+	... 30 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [config/db/db.xml]: Invocation of init method failed; nested exception is java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1694)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:573)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:367)
+	... 43 common frames omitted
+Caused by: java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:73)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:897)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:822)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1598)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1662)
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:932)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeCustomInitMethod(AbstractAutowireCapableBeanFactory.java:1819)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1762)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1690)
+	... 50 common frames omitted
+Caused by: com.mysql.cj.exceptions.CJException: Access denied for user 'saas      '@'172.16.63.107' (using password: YES)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:129)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:795)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:720)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:688)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:130)
+	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.proceedHandshakeWithPluggableAuthentication(NativeAuthenticationProvider.java:540)
+	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.connect(NativeAuthenticationProvider.java:202)
+	at com.mysql.cj.protocol.a.NativeProtocol.connect(NativeProtocol.java:1348)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:163)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:841)
+	... 67 common frames omitted
+2022-02-25 10:18:25.153 - [] - [main] INFO  cn.hsa.its.ItsFormDesignerApplication.logStarting(50) - Starting ItsFormDesignerApplication on LAPTOP-25O35OPL with PID 35332 (started by powersi in C:\Users\powersi\Desktop\自定义表单\its-form-designer-develop)
+2022-02-25 10:18:25.165 - [] - [main] DEBUG cn.hsa.its.ItsFormDesignerApplication.logStarting(53) - Running with Spring Boot v2.0.9.RELEASE, Spring v5.0.13.RELEASE
+2022-02-25 10:18:25.168 - [] - [main] INFO  cn.hsa.its.ItsFormDesignerApplication.logStartupProfileInfo(658) - The following profiles are active: local
+2022-02-25 10:18:25.307 - [] - [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext.prepareRefresh(592) - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7e8dcdaa: startup date [Fri Feb 25 10:18:25 CST 2022]; root of context hierarchy
+2022-02-25 10:18:27.452 - [] - [main] INFO  o.s.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317) - Loading XML bean definitions from URL [file:/C:/Users/powersi/Desktop/%e8%87%aa%e5%ae%9a%e4%b9%89%e8%a1%a8%e5%8d%95/its-form-designer-develop/hsa-main-generic/target/classes/config/spring.xml]
+2022-02-25 10:18:27.586 - [] - [main] INFO  o.s.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317) - Loading XML bean definitions from class path resource [config/db/db.xml]
+2022-02-25 10:18:28.020 - [] - [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate.multipleStoresDetected(172) - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-02-25 10:18:28.170 - [] - [main] INFO  o.s.b.factory.support.DefaultListableBeanFactory.registerBeanDefinition(824) - Overriding bean definition for bean 'org.springframework.transaction.config.internalTransactionAdvisor' with a different definition: replacing [Root bean: class [org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration; factoryMethodName=transactionAdvisor; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/transaction/annotation/ProxyTransactionManagementConfiguration.class]]
+2022-02-25 10:18:28.172 - [] - [main] INFO  o.s.c.a.ConfigurationClassBeanDefinitionReader.isOverriddenByExistingDefinition(307) - Skipping bean definition for [BeanMethod:name=transactionalEventListenerFactory,declaringClass=org.springframework.transaction.annotation.AbstractTransactionManagementConfiguration]: a definition for bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory' already exists. This top-level bean definition is considered as an override.
+2022-02-25 10:18:28.914 - [] - [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(326) - Bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0' of type [org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-25 10:18:28.957 - [] - [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(326) - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9a878b27] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-25 10:18:30.426 - [] - [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize(91) - Tomcat initialized with port(s): 8080 (http)
+2022-02-25 10:18:30.471 - [] - [main] INFO  org.apache.coyote.http11.Http11NioProtocol.log(180) - Initializing ProtocolHandler ["http-nio-8080"]
+2022-02-25 10:18:30.521 - [] - [main] INFO  org.apache.catalina.core.StandardService.log(180) - Starting service [Tomcat]
+2022-02-25 10:18:30.521 - [] - [main] INFO  org.apache.catalina.core.StandardEngine.log(180) - Starting Servlet Engine: Apache Tomcat/8.5.39
+2022-02-25 10:18:30.530 - [] - [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener.log(180) - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_251\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\JetBrains\IntelliJ IDEA 2019.1.4\jre64\\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.1.4\jre64\\bin\server;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Java\jdk1.8.0_251\bin;C:\Program Files\TortoiseSVN\bin;C:\Users\powersi\Desktop\HBuilderX\plugins\launcher\tools\adbs;C:\Program Files\nodejs\;C:\Users\powersi\AppData\Local\Microsoft\WindowsApps;C:\Users\powersi\AppData\Roaming\npm;.]
+2022-02-25 10:18:30.829 - [] - [localhost-startStop-1] INFO  o.a.c.c.C.[.[localhost].[/its-form-designer].log(180) - Initializing Spring embedded WebApplicationContext
+2022-02-25 10:18:30.830 - [] - [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader.prepareWebApplicationContext(296) - Root WebApplicationContext: initialization completed in 5524 ms
+2022-02-25 10:18:30.926 - [] - [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean.addRegistration(187) - Servlet dispatcherServlet mapped to [/]
+2022-02-25 10:18:30.943 - [] - [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean.configure(245) - Mapping filter: 'characterEncodingFilter' to: [/*]
+2022-02-25 10:18:32.026 - [] - [main] INFO  com.alibaba.druid.pool.DruidDataSource.init(1003) - {dataSource-1} inited
+2022-02-25 10:18:34.597 - [] - [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(550) - Mapped "{[/web/its/form/componentConfig/getComponentConfig],methods=[POST]}" onto public cn.hsa.its.form.dto.WrapperResponse<cn.hsa.its.form.dto.ComponentConfigDTO> cn.hsa.its.form.controller.ComponentConfigController.getComponentConfig(cn.hsa.its.form.dto.ComponentConfigParamDTO)
+2022-02-25 10:18:34.599 - [] - [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(550) - Mapped "{[/web/its/form/componentConfig/listComponentConfig],methods=[POST]}" onto public cn.hsa.its.form.dto.WrapperResponse<cn.hsa.its.form.dto.PageResultData<cn.hsa.its.form.dto.ComponentConfigDTO>> cn.hsa.its.form.controller.ComponentConfigController.listComponentConfig(cn.hsa.its.form.dto.ComponentConfigParamDTO)
+2022-02-25 10:18:34.601 - [] - [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(550) - Mapped "{[/web/its/form/componentConfig/saveComponentConfig],methods=[POST]}" onto public cn.hsa.its.form.dto.WrapperResponse<java.lang.Integer> cn.hsa.its.form.controller.ComponentConfigController.saveComponentConfig(cn.hsa.its.form.dto.ComponentConfigDTO)
+2022-02-25 10:18:34.603 - [] - [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(550) - Mapped "{[/web/its/form/componentConfig/deleteComponentConfig],methods=[POST]}" onto public cn.hsa.its.form.dto.WrapperResponse<java.lang.Integer> cn.hsa.its.form.controller.ComponentConfigController.deleteComponentConfig(cn.hsa.its.form.dto.ComponentConfigParamDTO)
+2022-02-25 10:18:34.606 - [] - [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(550) - Mapped "{[/web/its/form/fieldConfig/deleteFieldConfig],methods=[POST]}" onto public cn.hsa.its.form.dto.WrapperResponse<java.lang.Integer> cn.hsa.its.form.controller.FieldConfigController.deleteFieldConfig(cn.hsa.its.form.dto.FieldConfigParamDTO)
+2022-02-25 10:18:34.607 - [] - [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(550) - Mapped "{[/web/its/form/fieldConfig/getFieldDict],methods=[GET]}" onto public cn.hsa.its.form.dto.WrapperResponse<java.util.List<cn.hsa.its.form.dto.CodeTableDTO>> cn.hsa.its.form.controller.FieldConfigController.getFieldDict()
+2022-02-25 10:18:34.607 - [] - [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(550) - Mapped "{[/web/its/form/fieldConfig/getFieldConfig],methods=[POST]}" onto public cn.hsa.its.form.dto.WrapperResponse<cn.hsa.its.form.dto.FieldConfigDTO> cn.hsa.its.form.controller.FieldConfigController.getFieldConfig(cn.hsa.its.form.dto.FieldConfigParamDTO)
+2022-02-25 10:18:34.609 - [] - [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(550) - Mapped "{[/web/its/form/fieldConfig/listFieldConfig],methods=[POST]}" onto public cn.hsa.its.form.dto.WrapperResponse<cn.hsa.its.form.dto.PageResultData<cn.hsa.its.form.dto.FieldConfigDTO>> cn.hsa.its.form.controller.FieldConfigController.listFieldConfig(cn.hsa.its.form.dto.FieldConfigParamDTO)
+2022-02-25 10:18:34.609 - [] - [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(550) - Mapped "{[/web/its/form/fieldConfig/saveFieldConfig],methods=[POST]}" onto public cn.hsa.its.form.dto.WrapperResponse<java.lang.Integer> cn.hsa.its.form.controller.FieldConfigController.saveFieldConfig(cn.hsa.its.form.dto.FieldConfigDTO)
+2022-02-25 10:18:34.611 - [] - [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(550) - Mapped "{[/web/its/form/formConfig/deleteFormConfig],methods=[POST]}" onto public cn.hsa.its.form.dto.WrapperResponse<java.lang.Integer> cn.hsa.its.form.controller.FormConfigController.deleteFormConfig(cn.hsa.its.form.dto.FormConfigParamDTO)
+2022-02-25 10:18:34.612 - [] - [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(550) - Mapped "{[/web/its/form/formConfig/getFormConfig],methods=[POST]}" onto public cn.hsa.its.form.dto.WrapperResponse<cn.hsa.its.form.dto.FormConfigDTO> cn.hsa.its.form.controller.FormConfigController.getFormConfig(cn.hsa.its.form.dto.FormConfigParamDTO)
+2022-02-25 10:18:34.613 - [] - [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(550) - Mapped "{[/web/its/form/formConfig/saveFormConfig],methods=[POST]}" onto public cn.hsa.its.form.dto.WrapperResponse<java.lang.Integer> cn.hsa.its.form.controller.FormConfigController.saveFormConfig(cn.hsa.its.form.dto.FormConfigDTO)
+2022-02-25 10:18:34.614 - [] - [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(550) - Mapped "{[/web/its/form/formConfig/listFormConfig],methods=[POST]}" onto public cn.hsa.its.form.dto.WrapperResponse<cn.hsa.its.form.dto.PageResultData<cn.hsa.its.form.dto.FormConfigDTO>> cn.hsa.its.form.controller.FormConfigController.listFormConfig(cn.hsa.its.form.dto.FormConfigParamDTO)
+2022-02-25 10:18:34.620 - [] - [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(550) - Mapped "{[/web/its/form/formInstance/listFormInstance],methods=[POST]}" onto public cn.hsa.its.form.dto.WrapperResponse<cn.hsa.its.form.dto.PageResultData<cn.hsa.its.form.dto.FormInstanceDTO>> cn.hsa.its.form.controller.FormInstanceController.listFormInstance(cn.hsa.its.form.dto.FormInstanceDTO)
+2022-02-25 10:18:34.621 - [] - [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(550) - Mapped "{[/web/its/form/formInstance/saveFormInstance],methods=[POST]}" onto public cn.hsa.its.form.dto.WrapperResponse<java.lang.String> cn.hsa.its.form.controller.FormInstanceController.saveFormInstance(cn.hsa.its.form.dto.FormInstanceDTO)
+2022-02-25 10:18:34.622 - [] - [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(550) - Mapped "{[/web/its/form/formInstance/getFormInstance],methods=[POST]}" onto public cn.hsa.its.form.dto.WrapperResponse<cn.hsa.its.form.dto.FormInstanceDTO> cn.hsa.its.form.controller.FormInstanceController.getFormInstance(cn.hsa.its.form.dto.FormInstanceDTO)
+2022-02-25 10:18:34.622 - [] - [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(550) - Mapped "{[/web/its/form/formInstance/deleteFormInstance],methods=[POST]}" onto public cn.hsa.its.form.dto.WrapperResponse<java.lang.Integer> cn.hsa.its.form.controller.FormInstanceController.deleteFormInstance(cn.hsa.its.form.dto.FormInstanceDTO)
+2022-02-25 10:18:34.627 - [] - [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(550) - Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2022-02-25 10:18:34.628 - [] - [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(550) - Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2022-02-25 10:18:34.630 - [] - [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(550) - Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2022-02-25 10:18:34.634 - [] - [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(550) - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2022-02-25 10:18:34.635 - [] - [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(550) - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2022-02-25 10:18:35.010 - [] - [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(69) - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2022-02-25 10:18:35.122 - [] - [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler(372) - Mapped URL path [/swagger-ui.html] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2022-02-25 10:18:35.122 - [] - [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler(372) - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2022-02-25 10:18:35.251 - [] - [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache(589) - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7e8dcdaa: startup date [Fri Feb 25 10:18:25 CST 2022]; root of context hierarchy
+2022-02-25 10:18:36.722 - [] - [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter.afterSingletonsInstantiated(433) - Registering beans for JMX exposure on startup
+2022-02-25 10:18:36.725 - [] - [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter.autodetect(895) - Bean with name 'dataSource' has been autodetected for JMX exposure
+2022-02-25 10:18:36.736 - [] - [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter.registerBeanInstance(668) - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2022-02-25 10:18:36.742 - [] - [main] INFO  o.s.context.support.DefaultLifecycleProcessor.start(356) - Starting beans in phase 2147483647
+2022-02-25 10:18:36.743 - [] - [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper.start(160) - Context refreshed
+2022-02-25 10:18:36.781 - [] - [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper.start(163) - Found 1 custom documentation plugin(s)
+2022-02-25 10:18:36.859 - [] - [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner.scan(41) - Scanning for api listing references
+2022-02-25 10:18:37.370 - [] - [main] INFO  org.apache.coyote.http11.Http11NioProtocol.log(180) - Starting ProtocolHandler ["http-nio-8080"]
+2022-02-25 10:18:37.386 - [] - [main] INFO  org.apache.tomcat.util.net.NioSelectorPool.log(180) - Using a shared selector for servlet write/read
+2022-02-25 10:18:37.419 - [] - [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer.start(206) - Tomcat started on port(s): 8080 (http) with context path '/its-form-designer'
+2022-02-25 10:18:37.429 - [] - [main] INFO  cn.hsa.its.ItsFormDesignerApplication.logStarted(59) - Started ItsFormDesignerApplication in 14.346 seconds (JVM running for 16.262)
+2022-02-25 10:59:42.293 - [] - [http-nio-8080-exec-6] INFO  o.a.c.c.C.[.[localhost].[/its-form-designer].log(180) - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2022-02-25 10:59:42.295 - [] - [http-nio-8080-exec-6] INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean(497) - FrameworkServlet 'dispatcherServlet': initialization started
+2022-02-25 10:59:42.347 - [] - [http-nio-8080-exec-6] INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean(512) - FrameworkServlet 'dispatcherServlet': initialization completed in 51 ms
+2022-02-25 10:59:42.375 - [] - [http-nio-8080-exec-6] WARN  org.springframework.web.servlet.PageNotFound.noHandlerFound(1205) - No mapping found for HTTP request with URI [/its-form-designer/] in DispatcherServlet with name 'dispatcherServlet'
+2022-02-25 11:00:12.886 - [] - [http-nio-8080-exec-9] WARN  org.springframework.web.servlet.PageNotFound.noHandlerFound(1205) - No mapping found for HTTP request with URI [/its-form-designer/] in DispatcherServlet with name 'dispatcherServlet'
+2022-02-25 11:00:12.918 - [] - [http-nio-8080-exec-2] WARN  org.springframework.web.servlet.PageNotFound.noHandlerFound(1205) - No mapping found for HTTP request with URI [/its-form-designer/csrf] in DispatcherServlet with name 'dispatcherServlet'
+2022-02-25 11:02:25.964 - [] - [http-nio-8080-exec-3] WARN  org.springframework.web.servlet.PageNotFound.noHandlerFound(1205) - No mapping found for HTTP request with URI [/its-form-designer/] in DispatcherServlet with name 'dispatcherServlet'
+2022-02-25 11:02:26.001 - [] - [http-nio-8080-exec-8] WARN  org.springframework.web.servlet.PageNotFound.noHandlerFound(1205) - No mapping found for HTTP request with URI [/its-form-designer/csrf] in DispatcherServlet with name 'dispatcherServlet'
+2022-02-25 11:12:07.571 - [] - [http-nio-8080-exec-5] INFO  io.lettuce.core.EpollProvider.<clinit>(68) - Starting without optional epoll library
+2022-02-25 11:12:07.574 - [] - [http-nio-8080-exec-5] INFO  io.lettuce.core.KqueueProvider.<clinit>(70) - Starting without optional kqueue library
+2022-02-25 11:12:08.607 - [] - [http-nio-8080-exec-5] DEBUG cn.hsa.its.form.dao.FormConfigDAO.insert.debug(143) - ==>  Preparing: INSERT INTO form_cfg_b ( form_id, rid, form_code, form_name, form_desc, tmpl_flag, crte_time, opt_time ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2022-02-25 11:12:08.646 - [] - [http-nio-8080-exec-5] DEBUG cn.hsa.its.form.dao.FormConfigDAO.insert.debug(143) - ==> Parameters: 202202254(String), 5d2bc48a66804d57a33af1f6d3d4a703(String), 1213(String), 大(String), 222231(String), 1(String), 2022-02-25 11:12:07.249(Timestamp), 2022-02-25 11:12:07.249(Timestamp)
+2022-02-25 11:12:08.665 - [] - [http-nio-8080-exec-5] DEBUG cn.hsa.its.form.dao.FormConfigDAO.insert.debug(143) - <==    Updates: 1
+2022-02-25 11:12:08.831 - [] - [http-nio-8080-exec-6] DEBUG c.h.i.form.dao.FormConfigDAO.listFormConfig_COUNT.debug(143) - ==>  Preparing: SELECT count(0) FROM form_cfg_b t WHERE t.vali_flag = '1' 
+2022-02-25 11:12:08.832 - [] - [http-nio-8080-exec-6] DEBUG c.h.i.form.dao.FormConfigDAO.listFormConfig_COUNT.debug(143) - ==> Parameters: 
+2022-02-25 11:12:08.899 - [] - [http-nio-8080-exec-6] DEBUG c.h.i.form.dao.FormConfigDAO.listFormConfig_COUNT.debug(143) - <==      Total: 1
+2022-02-25 11:12:08.906 - [] - [http-nio-8080-exec-6] DEBUG cn.hsa.its.form.dao.FormConfigDAO.listFormConfig.debug(143) - ==>  Preparing: SELECT t.rid, t.form_id, t.form_code, t.form_name, t.form_desc, t.form_col, t.ttl_wid, t.tmpl_flag, t.vali_flag, t.insu_admdvs, t.admdvs, t.poolarea_no, t.crter_id, t.crter_name, t.crte_optins_no, t.crte_time, t.opter_id, t.opter_name, t.optins_no, t.opt_time, t.updt_time from form_cfg_b t WHERE t.vali_flag = '1' order by t.crte_time desc LIMIT ? 
+2022-02-25 11:12:08.909 - [] - [http-nio-8080-exec-6] DEBUG cn.hsa.its.form.dao.FormConfigDAO.listFormConfig.debug(143) - ==> Parameters: 15(Integer)
+2022-02-25 11:12:09.204 - [] - [http-nio-8080-exec-6] DEBUG cn.hsa.its.form.dao.FormConfigDAO.listFormConfig.debug(143) - <==      Total: 2
+2022-02-25 11:12:09.209 - [] - [http-nio-8080-exec-6] DEBUG c.h.i.f.dao.FormConfigParaDAO.listFormConfigPara.debug(143) - ==>  Preparing: SELECT t.rid, t.para_id, t.form_id, t.para_seq, t.para_name, t.paraval, t.vali_flag, t.insu_admdvs, t.admdvs, t.poolarea_no, t.crter_id, t.crter_name, t.crte_optins_no, t.crte_time from form_cfg_para_b t WHERE t.vali_flag = '1' and t.form_id = ? order by t.para_seq asc 
+2022-02-25 11:12:09.211 - [] - [http-nio-8080-exec-6] DEBUG c.h.i.f.dao.FormConfigParaDAO.listFormConfigPara.debug(143) - ==> Parameters: 202202254(String)
+2022-02-25 11:12:09.218 - [] - [http-nio-8080-exec-6] DEBUG c.h.i.f.dao.FormConfigParaDAO.listFormConfigPara.debug(143) - <==      Total: 0
+2022-02-25 11:12:09.220 - [] - [http-nio-8080-exec-6] DEBUG c.h.i.f.dao.FormConfigParaDAO.listFormConfigPara.debug(143) - ==>  Preparing: SELECT t.rid, t.para_id, t.form_id, t.para_seq, t.para_name, t.paraval, t.vali_flag, t.insu_admdvs, t.admdvs, t.poolarea_no, t.crter_id, t.crter_name, t.crte_optins_no, t.crte_time from form_cfg_para_b t WHERE t.vali_flag = '1' and t.form_id = ? order by t.para_seq asc 
+2022-02-25 11:12:09.221 - [] - [http-nio-8080-exec-6] DEBUG c.h.i.f.dao.FormConfigParaDAO.listFormConfigPara.debug(143) - ==> Parameters: 202202243(String)
+2022-02-25 11:12:09.836 - [] - [http-nio-8080-exec-6] DEBUG c.h.i.f.dao.FormConfigParaDAO.listFormConfigPara.debug(143) - <==      Total: 2
+2022-02-25 11:12:22.241 - [] - [http-nio-8080-exec-1] DEBUG c.h.i.form.dao.FormConfigDAO.listFormConfig_COUNT.debug(143) - ==>  Preparing: SELECT count(0) FROM form_cfg_b t WHERE t.vali_flag = '1' AND t.tmpl_flag = ? 
+2022-02-25 11:12:22.242 - [] - [http-nio-8080-exec-1] DEBUG c.h.i.form.dao.FormConfigDAO.listFormConfig_COUNT.debug(143) - ==> Parameters: 1(String)
+2022-02-25 11:12:22.248 - [] - [http-nio-8080-exec-1] DEBUG c.h.i.form.dao.FormConfigDAO.listFormConfig_COUNT.debug(143) - <==      Total: 1
+2022-02-25 11:12:22.249 - [] - [http-nio-8080-exec-1] DEBUG cn.hsa.its.form.dao.FormConfigDAO.listFormConfig.debug(143) - ==>  Preparing: SELECT t.rid, t.form_id, t.form_code, t.form_name, t.form_desc, t.form_col, t.ttl_wid, t.tmpl_flag, t.vali_flag, t.insu_admdvs, t.admdvs, t.poolarea_no, t.crter_id, t.crter_name, t.crte_optins_no, t.crte_time, t.opter_id, t.opter_name, t.optins_no, t.opt_time, t.updt_time from form_cfg_b t WHERE t.vali_flag = '1' and t.tmpl_flag = ? order by t.crte_time desc LIMIT ? 
+2022-02-25 11:12:22.250 - [] - [http-nio-8080-exec-1] DEBUG cn.hsa.its.form.dao.FormConfigDAO.listFormConfig.debug(143) - ==> Parameters: 1(String), 20(Integer)
+2022-02-25 11:12:22.324 - [] - [http-nio-8080-exec-7] DEBUG c.h.i.f.d.C.listComponentConfig_COUNT.debug(143) - ==>  Preparing: SELECT count(0) FROM comt_cfg_b t WHERE t.vali_flag = '1' 
+2022-02-25 11:12:22.325 - [] - [http-nio-8080-exec-7] DEBUG c.h.i.f.d.C.listComponentConfig_COUNT.debug(143) - ==> Parameters: 
+2022-02-25 11:12:22.331 - [] - [http-nio-8080-exec-7] DEBUG c.h.i.f.d.C.listComponentConfig_COUNT.debug(143) - <==      Total: 1
+2022-02-25 11:12:22.368 - [] - [http-nio-8080-exec-9] DEBUG cn.hsa.its.form.dao.FieldConfigDAO.getFieldDict.debug(143) - ==>  Preparing: select t.fld_code as data_val, t.fld_name as disp_val from fld_cfg_b t where t.vali_flag = '1' 
+2022-02-25 11:12:22.369 - [] - [http-nio-8080-exec-9] DEBUG cn.hsa.its.form.dao.FieldConfigDAO.getFieldDict.debug(143) - ==> Parameters: 
+2022-02-25 11:12:22.382 - [] - [http-nio-8080-exec-9] DEBUG cn.hsa.its.form.dao.FieldConfigDAO.getFieldDict.debug(143) - <==      Total: 0
+2022-02-25 11:12:22.533 - [] - [http-nio-8080-exec-1] DEBUG cn.hsa.its.form.dao.FormConfigDAO.listFormConfig.debug(143) - <==      Total: 1
+2022-02-25 11:12:22.535 - [] - [http-nio-8080-exec-1] DEBUG c.h.i.f.dao.FormConfigParaDAO.listFormConfigPara.debug(143) - ==>  Preparing: SELECT t.rid, t.para_id, t.form_id, t.para_seq, t.para_name, t.paraval, t.vali_flag, t.insu_admdvs, t.admdvs, t.poolarea_no, t.crter_id, t.crter_name, t.crte_optins_no, t.crte_time from form_cfg_para_b t WHERE t.vali_flag = '1' and t.form_id = ? order by t.para_seq asc 
+2022-02-25 11:12:22.538 - [] - [http-nio-8080-exec-1] DEBUG c.h.i.f.dao.FormConfigParaDAO.listFormConfigPara.debug(143) - ==> Parameters: 202202254(String)
+2022-02-25 11:12:22.546 - [] - [http-nio-8080-exec-1] DEBUG c.h.i.f.dao.FormConfigParaDAO.listFormConfigPara.debug(143) - <==      Total: 0
+2022-02-25 11:12:35.996 - [] - [http-nio-8080-exec-3] DEBUG cn.hsa.its.form.dao.FormConfigDAO.updateById.debug(143) - ==>  Preparing: UPDATE form_cfg_b SET rid=?, form_code=?, form_name=?, form_desc=?, tmpl_flag=?, vali_flag=?, insu_admdvs=?, admdvs=?, poolarea_no=?, crte_time=?, opt_time=?, updt_time=? WHERE form_id=? 
+2022-02-25 11:12:36.007 - [] - [http-nio-8080-exec-3] DEBUG cn.hsa.its.form.dao.FormConfigDAO.updateById.debug(143) - ==> Parameters: 5d2bc48a66804d57a33af1f6d3d4a703(String), 1213(String), 大(String), 222231(String), 1(String), 1(String), 0(String), 0(String), 0(String), 2022-02-25 11:12:07.0(Timestamp), 2022-02-25 11:12:35.974(Timestamp), 2022-02-25 11:12:35.974(Timestamp), 202202254(String)
+2022-02-25 11:12:36.013 - [] - [http-nio-8080-exec-3] DEBUG cn.hsa.its.form.dao.FormConfigDAO.updateById.debug(143) - <==    Updates: 1
+2022-02-25 11:12:36.013 - [] - [http-nio-8080-exec-3] DEBUG c.h.i.f.dao.FormConfigParaDAO.deleteFormConfigPara.debug(143) - ==>  Preparing: update form_cfg_para_b set vali_flag = '0' where form_id = ? 
+2022-02-25 11:12:36.014 - [] - [http-nio-8080-exec-3] DEBUG c.h.i.f.dao.FormConfigParaDAO.deleteFormConfigPara.debug(143) - ==> Parameters: 202202254(String)
+2022-02-25 11:12:36.021 - [] - [http-nio-8080-exec-3] DEBUG c.h.i.f.dao.FormConfigParaDAO.deleteFormConfigPara.debug(143) - <==    Updates: 0
+2022-02-25 11:12:36.039 - [] - [http-nio-8080-exec-3] DEBUG cn.hsa.its.form.dao.FormConfigParaDAO.insert.debug(143) - ==>  Preparing: INSERT INTO form_cfg_para_b ( para_id, rid, form_id, para_seq, para_name, paraval, vali_flag, crte_time ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2022-02-25 11:12:36.041 - [] - [http-nio-8080-exec-3] DEBUG cn.hsa.its.form.dao.FormConfigParaDAO.insert.debug(143) - ==> Parameters: 202202259(String), c57e8dd0b4c44557b1c1663851546025(String), 202202254(String), 0(Integer), 0(String), [{"label":"单行文本","tag":"el-input","tagIcon":"input","placeholder":"请输入","span":8,"labelWidth":105,"style":{"width":"100%"},"clearable":true,"append":"","maxlength":null,"show-word-limit":false,"readonly":false,"required":true,"changeTag":true,"tip":"请输入","formId":1645758742855,"vModel":"field1645758742855","renderKey":1645758742855,"layout":"colFormItem"},{"label":"多行文本","tag":"el-input","tagIcon":"textarea","type":"textarea","placeholder":"请输入","span":24,"labelWidth":105,"autosize":{"minRows":2,"maxRows":4},"style":{"width":"100%"},"maxlength":null,"show-word-limit":false,"readonly":false,"required":true,"changeTag":true,"tip":"请输入","formId":1645758744422,"vModel":"field1645758744422","renderKey":1645758744422,"layout":"colFormItem"},{"label":"下拉选择","tag":"el-select","tagIcon":"select","placeholder":"请选择","span":8,"labelWidth":105,"style":{"width":"100%"},"clearable":true,"disabled":false,"required":true,"filterable":false,"multiple":false,"options":[{"label":"选项","value":1}],"changeTag":true,"resourceUrl":"","tip":"请选择","formId":1645758746789,"vModel":"field1645758746789","renderKey":1645758746789,"layout":"colFormItem"},{"label":"级联选择","tag":"el-cascader","tagIcon":"cascader","placeholder":"请选择","defaultValue":[],"span":8,"labelWidth":105,"style":{"width":"100%"},"props":{"props":{"multiple":false}},"show-all-levels":true,"disabled":false,"clearable":true,"filterable":false,"required":true,"options":[{"id":1,"value":1,"label":"选项1","children":[{"id":2,"value":2,"label":"选项1-1"}]}],"dataType":"dynamic","labelKey":"label","valueKey":"value","childrenKey":"children","separator":"/","changeTag":true,"resourceUrl":"","tip":"请选择","formId":1645758747781,"vModel":"field1645758747781","renderKey":1645758747781,"layout":"colFormItem"},{"label":"时间选择","tag":"el-time-picker","tagIcon":"time","placeholder":"请选择","defaultValue":null,"span":8,"labelWidth":105,"style":{"width":"100%"},"disabled":false,"clearable":true,"required":true,"picker-options":{"selectableRange":"00:00:00(String), 1(String), 2022-02-25 11:12:35.974(Timestamp)
+2022-02-25 11:12:36.393 - [] - [http-nio-8080-exec-3] DEBUG cn.hsa.its.form.dao.FormConfigParaDAO.insert.debug(143) - <==    Updates: 1
+2022-02-25 11:12:36.397 - [] - [http-nio-8080-exec-3] DEBUG cn.hsa.its.form.dao.FormConfigParaDAO.insert.debug(143) - ==>  Preparing: INSERT INTO form_cfg_para_b ( para_id, rid, form_id, para_seq, para_name, paraval, vali_flag, crte_time ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2022-02-25 11:12:36.398 - [] - [http-nio-8080-exec-3] DEBUG cn.hsa.its.form.dao.FormConfigParaDAO.insert.debug(143) - ==> Parameters: 2022022510(String), 65f9b8156d5a4c38a21e52fa5e9c0994(String), 202202254(String), 1(Integer), 1(String), -23:59:59"},"format":"HH:mm:ss","value-format":"HH:mm:ss","changeTag":true,"tip":"请选择","formId":1645758750935,"vModel":"field1645758750935","renderKey":1645758750935,"layout":"colFormItem"}](String), 1(String), 2022-02-25 11:12:35.974(Timestamp)
+2022-02-25 11:12:36.406 - [] - [http-nio-8080-exec-3] DEBUG cn.hsa.its.form.dao.FormConfigParaDAO.insert.debug(143) - <==    Updates: 1
+2022-02-25 11:12:36.806 - [] - [http-nio-8080-exec-2] DEBUG c.h.i.form.dao.FormConfigDAO.listFormConfig_COUNT.debug(143) - ==>  Preparing: SELECT count(0) FROM form_cfg_b t WHERE t.vali_flag = '1' 
+2022-02-25 11:12:36.807 - [] - [http-nio-8080-exec-2] DEBUG c.h.i.form.dao.FormConfigDAO.listFormConfig_COUNT.debug(143) - ==> Parameters: 
+2022-02-25 11:12:36.814 - [] - [http-nio-8080-exec-2] DEBUG c.h.i.form.dao.FormConfigDAO.listFormConfig_COUNT.debug(143) - <==      Total: 1
+2022-02-25 11:12:36.815 - [] - [http-nio-8080-exec-2] DEBUG cn.hsa.its.form.dao.FormConfigDAO.listFormConfig.debug(143) - ==>  Preparing: SELECT t.rid, t.form_id, t.form_code, t.form_name, t.form_desc, t.form_col, t.ttl_wid, t.tmpl_flag, t.vali_flag, t.insu_admdvs, t.admdvs, t.poolarea_no, t.crter_id, t.crter_name, t.crte_optins_no, t.crte_time, t.opter_id, t.opter_name, t.optins_no, t.opt_time, t.updt_time from form_cfg_b t WHERE t.vali_flag = '1' order by t.crte_time desc LIMIT ? 
+2022-02-25 11:12:36.816 - [] - [http-nio-8080-exec-2] DEBUG cn.hsa.its.form.dao.FormConfigDAO.listFormConfig.debug(143) - ==> Parameters: 15(Integer)
+2022-02-25 11:12:37.093 - [] - [http-nio-8080-exec-2] DEBUG cn.hsa.its.form.dao.FormConfigDAO.listFormConfig.debug(143) - <==      Total: 2
+2022-02-25 11:12:37.095 - [] - [http-nio-8080-exec-2] DEBUG c.h.i.f.dao.FormConfigParaDAO.listFormConfigPara.debug(143) - ==>  Preparing: SELECT t.rid, t.para_id, t.form_id, t.para_seq, t.para_name, t.paraval, t.vali_flag, t.insu_admdvs, t.admdvs, t.poolarea_no, t.crter_id, t.crter_name, t.crte_optins_no, t.crte_time from form_cfg_para_b t WHERE t.vali_flag = '1' and t.form_id = ? order by t.para_seq asc 
+2022-02-25 11:12:37.097 - [] - [http-nio-8080-exec-2] DEBUG c.h.i.f.dao.FormConfigParaDAO.listFormConfigPara.debug(143) - ==> Parameters: 202202254(String)
+2022-02-25 11:12:37.429 - [] - [http-nio-8080-exec-2] DEBUG c.h.i.f.dao.FormConfigParaDAO.listFormConfigPara.debug(143) - <==      Total: 2
+2022-02-25 11:12:37.430 - [] - [http-nio-8080-exec-2] DEBUG c.h.i.f.dao.FormConfigParaDAO.listFormConfigPara.debug(143) - ==>  Preparing: SELECT t.rid, t.para_id, t.form_id, t.para_seq, t.para_name, t.paraval, t.vali_flag, t.insu_admdvs, t.admdvs, t.poolarea_no, t.crter_id, t.crter_name, t.crte_optins_no, t.crte_time from form_cfg_para_b t WHERE t.vali_flag = '1' and t.form_id = ? order by t.para_seq asc 
+2022-02-25 11:12:37.432 - [] - [http-nio-8080-exec-2] DEBUG c.h.i.f.dao.FormConfigParaDAO.listFormConfigPara.debug(143) - ==> Parameters: 202202243(String)
+2022-02-25 11:12:38.049 - [] - [http-nio-8080-exec-2] DEBUG c.h.i.f.dao.FormConfigParaDAO.listFormConfigPara.debug(143) - <==      Total: 2
+2022-02-25 11:19:20.602 - [] - [Thread-28] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext.doClose(1006) - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7e8dcdaa: startup date [Fri Feb 25 10:18:25 CST 2022]; root of context hierarchy
+2022-02-25 11:19:20.606 - [] - [Thread-28] INFO  o.s.context.support.DefaultLifecycleProcessor.stop(369) - Stopping beans in phase 2147483647
+2022-02-25 11:19:20.608 - [] - [Thread-28] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter.destroy(451) - Unregistering JMX-exposed beans on shutdown
+2022-02-25 11:19:20.608 - [] - [Thread-28] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter.unregisterBeans(185) - Unregistering JMX-exposed beans
+2022-02-25 11:19:20.610 - [] - [Thread-28] INFO  com.alibaba.druid.pool.DruidDataSource.close(1948) - {dataSource-1} closing ...
+2022-02-25 11:19:20.612 - [] - [Thread-28] INFO  com.alibaba.druid.pool.DruidDataSource.close(2020) - {dataSource-1} closed
+2022-02-25 13:36:45.909 - [] - [main] INFO  cn.hsa.its.ItsFormDesignerApplication.logStarting(50) - Starting ItsFormDesignerApplication on LAPTOP-25O35OPL with PID 34652 (started by powersi in C:\Users\powersi\Desktop\自定义表单\its-form-designer-develop)
+2022-02-25 13:36:45.921 - [] - [main] DEBUG cn.hsa.its.ItsFormDesignerApplication.logStarting(53) - Running with Spring Boot v2.0.9.RELEASE, Spring v5.0.13.RELEASE
+2022-02-25 13:36:45.924 - [] - [main] INFO  cn.hsa.its.ItsFormDesignerApplication.logStartupProfileInfo(658) - The following profiles are active: local
+2022-02-25 13:36:46.053 - [] - [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext.prepareRefresh(592) - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@340b9973: startup date [Fri Feb 25 13:36:46 CST 2022]; root of context hierarchy
+2022-02-25 13:36:47.755 - [] - [main] INFO  o.s.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317) - Loading XML bean definitions from URL [file:/C:/Users/powersi/Desktop/%e8%87%aa%e5%ae%9a%e4%b9%89%e8%a1%a8%e5%8d%95/its-form-designer-develop/hsa-main-generic/target/classes/config/spring.xml]
+2022-02-25 13:36:47.894 - [] - [main] INFO  o.s.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317) - Loading XML bean definitions from class path resource [config/db/db.xml]
+2022-02-25 13:36:48.425 - [] - [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate.multipleStoresDetected(172) - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-02-25 13:36:48.587 - [] - [main] INFO  o.s.b.factory.support.DefaultListableBeanFactory.registerBeanDefinition(824) - Overriding bean definition for bean 'org.springframework.transaction.config.internalTransactionAdvisor' with a different definition: replacing [Root bean: class [org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration; factoryMethodName=transactionAdvisor; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/transaction/annotation/ProxyTransactionManagementConfiguration.class]]
+2022-02-25 13:36:48.589 - [] - [main] INFO  o.s.c.a.ConfigurationClassBeanDefinitionReader.isOverriddenByExistingDefinition(307) - Skipping bean definition for [BeanMethod:name=transactionalEventListenerFactory,declaringClass=org.springframework.transaction.annotation.AbstractTransactionManagementConfiguration]: a definition for bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory' already exists. This top-level bean definition is considered as an override.
+2022-02-25 13:36:49.280 - [] - [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(326) - Bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0' of type [org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-25 13:36:49.326 - [] - [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(326) - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c6490108] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-25 13:36:50.455 - [] - [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize(91) - Tomcat initialized with port(s): 8080 (http)
+2022-02-25 13:36:50.479 - [] - [main] INFO  org.apache.coyote.http11.Http11NioProtocol.log(180) - Initializing ProtocolHandler ["http-nio-8080"]
+2022-02-25 13:36:50.504 - [] - [main] INFO  org.apache.catalina.core.StandardService.log(180) - Starting service [Tomcat]
+2022-02-25 13:36:50.504 - [] - [main] INFO  org.apache.catalina.core.StandardEngine.log(180) - Starting Servlet Engine: Apache Tomcat/8.5.39
+2022-02-25 13:36:50.512 - [] - [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener.log(180) - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_251\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\JetBrains\IntelliJ IDEA 2019.1.4\jre64\\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.1.4\jre64\\bin\server;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Java\jdk1.8.0_251\bin;C:\Program Files\TortoiseSVN\bin;C:\Users\powersi\Desktop\HBuilderX\plugins\launcher\tools\adbs;C:\Program Files\nodejs\;C:\Users\powersi\AppData\Local\Microsoft\WindowsApps;C:\Users\powersi\AppData\Roaming\npm;.]
+2022-02-25 13:36:50.740 - [] - [localhost-startStop-1] INFO  o.a.c.c.C.[.[localhost].[/its-form-designer].log(180) - Initializing Spring embedded WebApplicationContext
+2022-02-25 13:36:50.741 - [] - [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader.prepareWebApplicationContext(296) - Root WebApplicationContext: initialization completed in 4688 ms
+2022-02-25 13:36:50.815 - [] - [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean.addRegistration(187) - Servlet dispatcherServlet mapped to [/]
+2022-02-25 13:36:50.827 - [] - [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean.configure(245) - Mapping filter: 'characterEncodingFilter' to: [/*]
+2022-02-25 13:36:51.788 - [] - [main] INFO  com.alibaba.druid.pool.DruidDataSource.init(1003) - {dataSource-1} inited
+2022-02-25 13:36:54.347 - [] - [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(550) - Mapped "{[/web/its/form/componentConfig/saveComponentConfig],methods=[POST]}" onto public cn.hsa.its.form.dto.WrapperResponse<java.lang.Integer> cn.hsa.its.form.controller.ComponentConfigController.saveComponentConfig(cn.hsa.its.form.dto.ComponentConfigDTO)
+2022-02-25 13:36:54.350 - [] - [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(550) - Mapped "{[/web/its/form/componentConfig/deleteComponentConfig],methods=[POST]}" onto public cn.hsa.its.form.dto.WrapperResponse<java.lang.Integer> cn.hsa.its.form.controller.ComponentConfigController.deleteComponentConfig(cn.hsa.its.form.dto.ComponentConfigParamDTO)
+2022-02-25 13:36:54.351 - [] - [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(550) - Mapped "{[/web/its/form/componentConfig/listComponentConfig],methods=[POST]}" onto public cn.hsa.its.form.dto.WrapperResponse<cn.hsa.its.form.dto.PageResultData<cn.hsa.its.form.dto.ComponentConfigDTO>> cn.hsa.its.form.controller.ComponentConfigController.listComponentConfig(cn.hsa.its.form.dto.ComponentConfigParamDTO)
+2022-02-25 13:36:54.353 - [] - [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(550) - Mapped "{[/web/its/form/componentConfig/getComponentConfig],methods=[POST]}" onto public cn.hsa.its.form.dto.WrapperResponse<cn.hsa.its.form.dto.ComponentConfigDTO> cn.hsa.its.form.controller.ComponentConfigController.getComponentConfig(cn.hsa.its.form.dto.ComponentConfigParamDTO)
+2022-02-25 13:36:54.356 - [] - [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(550) - Mapped "{[/web/its/form/fieldConfig/getFieldDict],methods=[GET]}" onto public cn.hsa.its.form.dto.WrapperResponse<java.util.List<cn.hsa.its.form.dto.CodeTableDTO>> cn.hsa.its.form.controller.FieldConfigController.getFieldDict()
+2022-02-25 13:36:54.357 - [] - [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(550) - Mapped "{[/web/its/form/fieldConfig/listFieldConfig],methods=[POST]}" onto public cn.hsa.its.form.dto.WrapperResponse<cn.hsa.its.form.dto.PageResultData<cn.hsa.its.form.dto.FieldConfigDTO>> cn.hsa.its.form.controller.FieldConfigController.listFieldConfig(cn.hsa.its.form.dto.FieldConfigParamDTO)
+2022-02-25 13:36:54.357 - [] - [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(550) - Mapped "{[/web/its/form/fieldConfig/getFieldConfig],methods=[POST]}" onto public cn.hsa.its.form.dto.WrapperResponse<cn.hsa.its.form.dto.FieldConfigDTO> cn.hsa.its.form.controller.FieldConfigController.getFieldConfig(cn.hsa.its.form.dto.FieldConfigParamDTO)
+2022-02-25 13:36:54.358 - [] - [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(550) - Mapped "{[/web/its/form/fieldConfig/saveFieldConfig],methods=[POST]}" onto public cn.hsa.its.form.dto.WrapperResponse<java.lang.Integer> cn.hsa.its.form.controller.FieldConfigController.saveFieldConfig(cn.hsa.its.form.dto.FieldConfigDTO)
+2022-02-25 13:36:54.359 - [] - [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(550) - Mapped "{[/web/its/form/fieldConfig/deleteFieldConfig],methods=[POST]}" onto public cn.hsa.its.form.dto.WrapperResponse<java.lang.Integer> cn.hsa.its.form.controller.FieldConfigController.deleteFieldConfig(cn.hsa.its.form.dto.FieldConfigParamDTO)
+2022-02-25 13:36:54.361 - [] - [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(550) - Mapped "{[/web/its/form/formConfig/getFormConfig],methods=[POST]}" onto public cn.hsa.its.form.dto.WrapperResponse<cn.hsa.its.form.dto.FormConfigDTO> cn.hsa.its.form.controller.FormConfigController.getFormConfig(cn.hsa.its.form.dto.FormConfigParamDTO)
+2022-02-25 13:36:54.361 - [] - [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(550) - Mapped "{[/web/its/form/formConfig/saveFormConfig],methods=[POST]}" onto public cn.hsa.its.form.dto.WrapperResponse<java.lang.Integer> cn.hsa.its.form.controller.FormConfigController.saveFormConfig(cn.hsa.its.form.dto.FormConfigDTO)
+2022-02-25 13:36:54.362 - [] - [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(550) - Mapped "{[/web/its/form/formConfig/deleteFormConfig],methods=[POST]}" onto public cn.hsa.its.form.dto.WrapperResponse<java.lang.Integer> cn.hsa.its.form.controller.FormConfigController.deleteFormConfig(cn.hsa.its.form.dto.FormConfigParamDTO)
+2022-02-25 13:36:54.363 - [] - [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(550) - Mapped "{[/web/its/form/formConfig/listFormConfig],methods=[POST]}" onto public cn.hsa.its.form.dto.WrapperResponse<cn.hsa.its.form.dto.PageResultData<cn.hsa.its.form.dto.FormConfigDTO>> cn.hsa.its.form.controller.FormConfigController.listFormConfig(cn.hsa.its.form.dto.FormConfigParamDTO)
+2022-02-25 13:36:54.369 - [] - [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(550) - Mapped "{[/web/its/form/formInstance/listFormInstance],methods=[POST]}" onto public cn.hsa.its.form.dto.WrapperResponse<cn.hsa.its.form.dto.PageResultData<cn.hsa.its.form.dto.FormInstanceDTO>> cn.hsa.its.form.controller.FormInstanceController.listFormInstance(cn.hsa.its.form.dto.FormInstanceDTO)
+2022-02-25 13:36:54.370 - [] - [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(550) - Mapped "{[/web/its/form/formInstance/getFormInstance],methods=[POST]}" onto public cn.hsa.its.form.dto.WrapperResponse<cn.hsa.its.form.dto.FormInstanceDTO> cn.hsa.its.form.controller.FormInstanceController.getFormInstance(cn.hsa.its.form.dto.FormInstanceDTO)
+2022-02-25 13:36:54.371 - [] - [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(550) - Mapped "{[/web/its/form/formInstance/saveFormInstance],methods=[POST]}" onto public cn.hsa.its.form.dto.WrapperResponse<java.lang.String> cn.hsa.its.form.controller.FormInstanceController.saveFormInstance(cn.hsa.its.form.dto.FormInstanceDTO)
+2022-02-25 13:36:54.371 - [] - [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(550) - Mapped "{[/web/its/form/formInstance/deleteFormInstance],methods=[POST]}" onto public cn.hsa.its.form.dto.WrapperResponse<java.lang.Integer> cn.hsa.its.form.controller.FormInstanceController.deleteFormInstance(cn.hsa.its.form.dto.FormInstanceDTO)
+2022-02-25 13:36:54.376 - [] - [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(550) - Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2022-02-25 13:36:54.378 - [] - [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(550) - Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2022-02-25 13:36:54.379 - [] - [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(550) - Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2022-02-25 13:36:54.383 - [] - [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(550) - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2022-02-25 13:36:54.384 - [] - [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register(550) - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2022-02-25 13:36:54.827 - [] - [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(69) - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2022-02-25 13:36:54.961 - [] - [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler(372) - Mapped URL path [/swagger-ui.html] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2022-02-25 13:36:54.963 - [] - [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler(372) - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2022-02-25 13:36:55.097 - [] - [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache(589) - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@340b9973: startup date [Fri Feb 25 13:36:46 CST 2022]; root of context hierarchy
+2022-02-25 13:36:56.479 - [] - [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter.afterSingletonsInstantiated(433) - Registering beans for JMX exposure on startup
+2022-02-25 13:36:56.482 - [] - [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter.autodetect(895) - Bean with name 'dataSource' has been autodetected for JMX exposure
+2022-02-25 13:36:56.491 - [] - [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter.registerBeanInstance(668) - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2022-02-25 13:36:56.499 - [] - [main] INFO  o.s.context.support.DefaultLifecycleProcessor.start(356) - Starting beans in phase 2147483647
+2022-02-25 13:36:56.499 - [] - [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper.start(160) - Context refreshed
+2022-02-25 13:36:56.536 - [] - [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper.start(163) - Found 1 custom documentation plugin(s)
+2022-02-25 13:36:56.604 - [] - [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner.scan(41) - Scanning for api listing references
+2022-02-25 13:36:57.060 - [] - [main] INFO  org.apache.coyote.http11.Http11NioProtocol.log(180) - Starting ProtocolHandler ["http-nio-8080"]
+2022-02-25 13:36:57.078 - [] - [main] INFO  org.apache.tomcat.util.net.NioSelectorPool.log(180) - Using a shared selector for servlet write/read
+2022-02-25 13:36:57.107 - [] - [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer.start(206) - Tomcat started on port(s): 8080 (http) with context path '/its-form-designer'
+2022-02-25 13:36:57.115 - [] - [main] INFO  cn.hsa.its.ItsFormDesignerApplication.logStarted(59) - Started ItsFormDesignerApplication in 13.802 seconds (JVM running for 17.852)
+2022-02-25 13:53:03.812 - [] - [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/its-form-designer].log(180) - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2022-02-25 13:53:03.812 - [] - [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean(497) - FrameworkServlet 'dispatcherServlet': initialization started
+2022-02-25 13:53:03.859 - [] - [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean(512) - FrameworkServlet 'dispatcherServlet': initialization completed in 46 ms
+2022-02-25 13:53:04.219 - [] - [http-nio-8080-exec-1] DEBUG c.h.i.form.dao.FormConfigDAO.listFormConfig_COUNT.debug(143) - ==>  Preparing: SELECT count(0) FROM form_cfg_b t WHERE t.vali_flag = '1' 
+2022-02-25 13:53:04.263 - [] - [http-nio-8080-exec-1] DEBUG c.h.i.form.dao.FormConfigDAO.listFormConfig_COUNT.debug(143) - ==> Parameters: 
+2022-02-25 13:53:04.306 - [] - [http-nio-8080-exec-1] DEBUG c.h.i.form.dao.FormConfigDAO.listFormConfig_COUNT.debug(143) - <==      Total: 1
+2022-02-25 13:53:04.311 - [] - [http-nio-8080-exec-1] DEBUG cn.hsa.its.form.dao.FormConfigDAO.listFormConfig.debug(143) - ==>  Preparing: SELECT t.rid, t.form_id, t.form_code, t.form_name, t.form_desc, t.form_col, t.ttl_wid, t.tmpl_flag, t.vali_flag, t.insu_admdvs, t.admdvs, t.poolarea_no, t.crter_id, t.crter_name, t.crte_optins_no, t.crte_time, t.opter_id, t.opter_name, t.optins_no, t.opt_time, t.updt_time from form_cfg_b t WHERE t.vali_flag = '1' order by t.crte_time desc LIMIT ? 
+2022-02-25 13:53:04.313 - [] - [http-nio-8080-exec-1] DEBUG cn.hsa.its.form.dao.FormConfigDAO.listFormConfig.debug(143) - ==> Parameters: 15(Integer)
+2022-02-25 13:53:04.324 - [] - [http-nio-8080-exec-1] DEBUG cn.hsa.its.form.dao.FormConfigDAO.listFormConfig.debug(143) - <==      Total: 2
+2022-02-25 13:53:04.329 - [] - [http-nio-8080-exec-1] DEBUG c.h.i.f.dao.FormConfigParaDAO.listFormConfigPara.debug(143) - ==>  Preparing: SELECT t.rid, t.para_id, t.form_id, t.para_seq, t.para_name, t.paraval, t.vali_flag, t.insu_admdvs, t.admdvs, t.poolarea_no, t.crter_id, t.crter_name, t.crte_optins_no, t.crte_time from form_cfg_para_b t WHERE t.vali_flag = '1' and t.form_id = ? order by t.para_seq asc 
+2022-02-25 13:53:04.331 - [] - [http-nio-8080-exec-1] DEBUG c.h.i.f.dao.FormConfigParaDAO.listFormConfigPara.debug(143) - ==> Parameters: 202202254(String)
+2022-02-25 13:53:04.341 - [] - [http-nio-8080-exec-1] DEBUG c.h.i.f.dao.FormConfigParaDAO.listFormConfigPara.debug(143) - <==      Total: 2
+2022-02-25 13:53:04.346 - [] - [http-nio-8080-exec-1] DEBUG c.h.i.f.dao.FormConfigParaDAO.listFormConfigPara.debug(143) - ==>  Preparing: SELECT t.rid, t.para_id, t.form_id, t.para_seq, t.para_name, t.paraval, t.vali_flag, t.insu_admdvs, t.admdvs, t.poolarea_no, t.crter_id, t.crter_name, t.crte_optins_no, t.crte_time from form_cfg_para_b t WHERE t.vali_flag = '1' and t.form_id = ? order by t.para_seq asc 
+2022-02-25 13:53:04.347 - [] - [http-nio-8080-exec-1] DEBUG c.h.i.f.dao.FormConfigParaDAO.listFormConfigPara.debug(143) - ==> Parameters: 202202243(String)
+2022-02-25 13:53:04.355 - [] - [http-nio-8080-exec-1] DEBUG c.h.i.f.dao.FormConfigParaDAO.listFormConfigPara.debug(143) - <==      Total: 2
+2022-02-25 13:59:46.093 - [] - [http-nio-8080-exec-2] DEBUG c.h.i.form.dao.FormConfigDAO.listFormConfig_COUNT.debug(143) - ==>  Preparing: SELECT count(0) FROM form_cfg_b t WHERE t.vali_flag = '1' 
+2022-02-25 13:59:46.095 - [] - [http-nio-8080-exec-2] DEBUG c.h.i.form.dao.FormConfigDAO.listFormConfig_COUNT.debug(143) - ==> Parameters: 
+2022-02-25 13:59:46.098 - [] - [http-nio-8080-exec-2] DEBUG c.h.i.form.dao.FormConfigDAO.listFormConfig_COUNT.debug(143) - <==      Total: 1
+2022-02-25 13:59:46.100 - [] - [http-nio-8080-exec-2] DEBUG cn.hsa.its.form.dao.FormConfigDAO.listFormConfig.debug(143) - ==>  Preparing: SELECT t.rid, t.form_id, t.form_code, t.form_name, t.form_desc, t.form_col, t.ttl_wid, t.tmpl_flag, t.vali_flag, t.insu_admdvs, t.admdvs, t.poolarea_no, t.crter_id, t.crter_name, t.crte_optins_no, t.crte_time, t.opter_id, t.opter_name, t.optins_no, t.opt_time, t.updt_time from form_cfg_b t WHERE t.vali_flag = '1' order by t.crte_time desc LIMIT ? 
+2022-02-25 13:59:46.101 - [] - [http-nio-8080-exec-2] DEBUG cn.hsa.its.form.dao.FormConfigDAO.listFormConfig.debug(143) - ==> Parameters: 15(Integer)
+2022-02-25 13:59:46.108 - [] - [http-nio-8080-exec-2] DEBUG cn.hsa.its.form.dao.FormConfigDAO.listFormConfig.debug(143) - <==      Total: 2
+2022-02-25 13:59:46.110 - [] - [http-nio-8080-exec-2] DEBUG c.h.i.f.dao.FormConfigParaDAO.listFormConfigPara.debug(143) - ==>  Preparing: SELECT t.rid, t.para_id, t.form_id, t.para_seq, t.para_name, t.paraval, t.vali_flag, t.insu_admdvs, t.admdvs, t.poolarea_no, t.crter_id, t.crter_name, t.crte_optins_no, t.crte_time from form_cfg_para_b t WHERE t.vali_flag = '1' and t.form_id = ? order by t.para_seq asc 
+2022-02-25 13:59:46.112 - [] - [http-nio-8080-exec-2] DEBUG c.h.i.f.dao.FormConfigParaDAO.listFormConfigPara.debug(143) - ==> Parameters: 202202254(String)
+2022-02-25 13:59:46.120 - [] - [http-nio-8080-exec-2] DEBUG c.h.i.f.dao.FormConfigParaDAO.listFormConfigPara.debug(143) - <==      Total: 2
+2022-02-25 13:59:46.122 - [] - [http-nio-8080-exec-2] DEBUG c.h.i.f.dao.FormConfigParaDAO.listFormConfigPara.debug(143) - ==>  Preparing: SELECT t.rid, t.para_id, t.form_id, t.para_seq, t.para_name, t.paraval, t.vali_flag, t.insu_admdvs, t.admdvs, t.poolarea_no, t.crter_id, t.crter_name, t.crte_optins_no, t.crte_time from form_cfg_para_b t WHERE t.vali_flag = '1' and t.form_id = ? order by t.para_seq asc 
+2022-02-25 13:59:46.123 - [] - [http-nio-8080-exec-2] DEBUG c.h.i.f.dao.FormConfigParaDAO.listFormConfigPara.debug(143) - ==> Parameters: 202202243(String)
+2022-02-25 13:59:46.130 - [] - [http-nio-8080-exec-2] DEBUG c.h.i.f.dao.FormConfigParaDAO.listFormConfigPara.debug(143) - <==      Total: 2
+2022-02-25 14:00:01.827 - [] - [http-nio-8080-exec-5] DEBUG c.h.i.form.dao.FormConfigDAO.listFormConfig_COUNT.debug(143) - ==>  Preparing: SELECT count(0) FROM form_cfg_b t WHERE t.vali_flag = '1' AND t.tmpl_flag = ? 
+2022-02-25 14:00:01.829 - [] - [http-nio-8080-exec-5] DEBUG c.h.i.form.dao.FormConfigDAO.listFormConfig_COUNT.debug(143) - ==> Parameters: 1(String)
+2022-02-25 14:00:01.836 - [] - [http-nio-8080-exec-5] DEBUG c.h.i.form.dao.FormConfigDAO.listFormConfig_COUNT.debug(143) - <==      Total: 1
+2022-02-25 14:00:01.838 - [] - [http-nio-8080-exec-5] DEBUG cn.hsa.its.form.dao.FormConfigDAO.listFormConfig.debug(143) - ==>  Preparing: SELECT t.rid, t.form_id, t.form_code, t.form_name, t.form_desc, t.form_col, t.ttl_wid, t.tmpl_flag, t.vali_flag, t.insu_admdvs, t.admdvs, t.poolarea_no, t.crter_id, t.crter_name, t.crte_optins_no, t.crte_time, t.opter_id, t.opter_name, t.optins_no, t.opt_time, t.updt_time from form_cfg_b t WHERE t.vali_flag = '1' and t.tmpl_flag = ? order by t.crte_time desc LIMIT ? 
+2022-02-25 14:00:01.839 - [] - [http-nio-8080-exec-5] DEBUG cn.hsa.its.form.dao.FormConfigDAO.listFormConfig.debug(143) - ==> Parameters: 1(String), 20(Integer)
+2022-02-25 14:00:01.844 - [] - [http-nio-8080-exec-5] DEBUG cn.hsa.its.form.dao.FormConfigDAO.listFormConfig.debug(143) - <==      Total: 1
+2022-02-25 14:00:01.845 - [] - [http-nio-8080-exec-5] DEBUG c.h.i.f.dao.FormConfigParaDAO.listFormConfigPara.debug(143) - ==>  Preparing: SELECT t.rid, t.para_id, t.form_id, t.para_seq, t.para_name, t.paraval, t.vali_flag, t.insu_admdvs, t.admdvs, t.poolarea_no, t.crter_id, t.crter_name, t.crte_optins_no, t.crte_time from form_cfg_para_b t WHERE t.vali_flag = '1' and t.form_id = ? order by t.para_seq asc 
+2022-02-25 14:00:01.846 - [] - [http-nio-8080-exec-5] DEBUG c.h.i.f.dao.FormConfigParaDAO.listFormConfigPara.debug(143) - ==> Parameters: 202202254(String)
+2022-02-25 14:00:01.857 - [] - [http-nio-8080-exec-5] DEBUG c.h.i.f.dao.FormConfigParaDAO.listFormConfigPara.debug(143) - <==      Total: 2
+2022-02-25 14:00:02.137 - [] - [http-nio-8080-exec-4] DEBUG cn.hsa.its.form.dao.FieldConfigDAO.getFieldDict.debug(143) - ==>  Preparing: select t.fld_code as data_val, t.fld_name as disp_val from fld_cfg_b t where t.vali_flag = '1' 
+2022-02-25 14:00:02.137 - [] - [http-nio-8080-exec-4] DEBUG cn.hsa.its.form.dao.FieldConfigDAO.getFieldDict.debug(143) - ==> Parameters: 
+2022-02-25 14:00:02.142 - [] - [http-nio-8080-exec-4] DEBUG cn.hsa.its.form.dao.FieldConfigDAO.getFieldDict.debug(143) - <==      Total: 0
+2022-02-25 14:00:02.186 - [] - [http-nio-8080-exec-3] DEBUG c.h.i.f.d.C.listComponentConfig_COUNT.debug(143) - ==>  Preparing: SELECT count(0) FROM comt_cfg_b t WHERE t.vali_flag = '1' 
+2022-02-25 14:00:02.187 - [] - [http-nio-8080-exec-3] DEBUG c.h.i.f.d.C.listComponentConfig_COUNT.debug(143) - ==> Parameters: 
+2022-02-25 14:00:02.190 - [] - [http-nio-8080-exec-3] DEBUG c.h.i.f.d.C.listComponentConfig_COUNT.debug(143) - <==      Total: 1
+2022-02-25 14:00:05.300 - [] - [http-nio-8080-exec-6] DEBUG c.h.i.f.dao.FieldConfigDAO.listFieldConfig_COUNT.debug(143) - ==>  Preparing: SELECT count(0) FROM fld_cfg_b t WHERE t.vali_flag = '1' 
+2022-02-25 14:00:05.301 - [] - [http-nio-8080-exec-6] DEBUG c.h.i.f.dao.FieldConfigDAO.listFieldConfig_COUNT.debug(143) - ==> Parameters: 
+2022-02-25 14:00:05.307 - [] - [http-nio-8080-exec-6] DEBUG c.h.i.f.dao.FieldConfigDAO.listFieldConfig_COUNT.debug(143) - <==      Total: 1
+2022-02-25 14:00:05.791 - [] - [http-nio-8080-exec-9] DEBUG c.h.i.f.d.C.listComponentConfig_COUNT.debug(143) - ==>  Preparing: SELECT count(0) FROM comt_cfg_b t WHERE t.vali_flag = '1' 
+2022-02-25 14:00:05.793 - [] - [http-nio-8080-exec-9] DEBUG c.h.i.f.d.C.listComponentConfig_COUNT.debug(143) - ==> Parameters: 
+2022-02-25 14:00:05.797 - [] - [http-nio-8080-exec-9] DEBUG c.h.i.f.d.C.listComponentConfig_COUNT.debug(143) - <==      Total: 1
+2022-02-25 14:00:06.095 - [] - [http-nio-8080-exec-10] DEBUG cn.hsa.its.form.dao.FieldConfigDAO.getFieldDict.debug(143) - ==>  Preparing: select t.fld_code as data_val, t.fld_name as disp_val from fld_cfg_b t where t.vali_flag = '1' 
+2022-02-25 14:00:06.096 - [] - [http-nio-8080-exec-10] DEBUG cn.hsa.its.form.dao.FieldConfigDAO.getFieldDict.debug(143) - ==> Parameters: 
+2022-02-25 14:00:06.102 - [] - [http-nio-8080-exec-10] DEBUG cn.hsa.its.form.dao.FieldConfigDAO.getFieldDict.debug(143) - <==      Total: 0

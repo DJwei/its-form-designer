@@ -1,0 +1,7 @@
+/.idea/
+
+# Project exclude paths
+/hsa-main-generic/target/
+/its-form-designer-api/target/
+/its-form-designer-biz/target/
+/its-form-designer-db/target/

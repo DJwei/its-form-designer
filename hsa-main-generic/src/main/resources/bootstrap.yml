@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: its-form-designer
+  cloud:
+    nacos:
+      config:
+        file-extension: properties
+        group: its-form-designer
